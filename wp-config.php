@@ -22,10 +22,10 @@
 define( 'DB_NAME', 'wp_lvgwebsite' );
 
 /** Utilisateur de la base de données MySQL. */
-define( 'DB_USER', 'helio' );
+define( 'DB_USER', 'admin' );
 
 /** Mot de passe de la base de données MySQL. */
-define( 'DB_PASSWORD', 'Ereul9Aeng' );
+define( 'DB_PASSWORD', '120688' );
 
 /** Adresse de l’hébergement MySQL. */
 define( 'DB_HOST', 'localhost' );
@@ -49,14 +49,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '{iOn)y _:e3@{4ieQh5Iki<IP!g:rFhXpC=9po3*x[8lh%!SHSOpseu5yh&W0=j^');
-define('SECURE_AUTH_KEY',  'v>QXN%5mJav!<)]km6Aznj1FBLXZk-7p8k!lKh%L|}w6-R&VAF +B+tB6Zh/!+-B');
-define('LOGGED_IN_KEY',    'xLeHyPLYX>|6+G>1<D) IU`C[s&e%Old.UiE>ppP|l<),!LK( T6E`{*((rSbuiC');
-define('NONCE_KEY',        'd +ZmTY:ZL{C9Xr|5rTdwT}%v2%>_Db{`Nl8U7`oB?ei&PKI#Eh2At2x50r|p;$k');
-define('AUTH_SALT',        '>EXG1xO++tg9xd&T=LX0`})kh$L[aw>|M1O mPm<<!167(fkhXPRSR4$I:.V1|2K');
-define('SECURE_AUTH_SALT', '3:k+4??dr5DU|0:LM6|vhJ*YG?+fqw`IG}QbUPB-:s%HDz-_aZ$i;bU[ZrZ]mG58');
-define('LOGGED_IN_SALT',   '}n:F7^yF_s^_UH>66mnePXj6)>(Iab>S;o/O%hHD+S^.Xe%?)4B*t|RZ<b7=SO7z');
-define('NONCE_SALT',       '/b oJP A;FCSMLXOE:0p)3$Cv52`6<Nye|.5D:p1NK[HKJRcy&jrRnm9vegXq,VU');
+define( 'AUTH_KEY',         '' );
+define( 'SECURE_AUTH_KEY',  '' );
+define( 'LOGGED_IN_KEY',    '' );
+define( 'NONCE_KEY',        '' );
+define( 'AUTH_SALT',        '' );
+define( 'SECURE_AUTH_SALT', '' );
+define( 'LOGGED_IN_SALT',   '' );
+define( 'NONCE_SALT',       '' );
 /**#@-*/
 
 /**
@@ -68,7 +68,7 @@ define('NONCE_SALT',       '/b oJP A;FCSMLXOE:0p)3$Cv52`6<Nye|.5D:p1NK[HKJRcy&jr
  */
 $table_prefix = 'wp_';
 
-define('WP_CONTENT_URL', 'http://localhost/lvg-website/content');
+define('WP_CONTENT_URL', 'http://localhost/Wordpress/lvg-website/content');
 define('WP_CONTENT_DIR', dirname(__FILE__).'/content');
 /**
  * Pour les développeurs : le mode déboguage de WordPress.
