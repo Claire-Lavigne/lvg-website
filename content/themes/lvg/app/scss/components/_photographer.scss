@@ -47,7 +47,8 @@
         margin: 0 auto;
         padding: 1em;
         p{
-            font-size: 1.5em;          
+            font-size: 1.4em; 
+         
         }
         @include mobiles{
             width: 85%;
@@ -61,17 +62,20 @@
             padding-right: 2em;
         }
         @include computers{
-            padding: 0 11em;
-            padding-right: 25em;
-            left: 32%;
+            position: relative;
+            width: 40%;      
+           // padding-right: 20em;
+           left: 20%;
+            bottom: 13.5em;     
+ 
         }
         @include large-screens{
-            width: 50%;
+            position: relative; 
             height: 500px;
-            padding: 8em 12em;
-            padding-right: 8em;
-            left: 10%;
-            bottom: 20em;
+          //  padding: 8em 12em;
+        //    padding-right: 8em;
+         //   left: 10%;
+            bottom: 15em;
         }
     }
  

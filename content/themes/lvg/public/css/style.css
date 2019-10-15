@@ -10005,7 +10005,7 @@ form {
     margin: 0 auto;
     padding: 1em; }
     .photographer__text p {
-      font-size: 1.5em; }
+      font-size: 1.4em; }
     @media (min-width: 481px) {
       .photographer__text {
         width: 85%;
@@ -10019,17 +10019,15 @@ form {
         padding-right: 2em; } }
     @media (min-width: 1025px) {
       .photographer__text {
-        padding: 0 11em;
-        padding-right: 25em;
-        left: 32%; } }
+        position: relative;
+        width: 40%;
+        left: 20%;
+        bottom: 13.5em; } }
     @media (min-width: 1281px) {
       .photographer__text {
-        width: 50%;
+        position: relative;
         height: 500px;
-        padding: 8em 12em;
-        padding-right: 8em;
-        left: 10%;
-        bottom: 20em; } }
+        bottom: 15em; } }
 
 .header-slides {
   height: 100vh; }
@@ -10109,7 +10107,7 @@ footer {
   @media (min-width: 1025px) {
     .contact__inline {
       flex-flow: row wrap;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
       margin-top: 80px; } }
   @media (min-width: 1025px) and (min-width: 1281px) {
@@ -10124,15 +10122,11 @@ footer {
   .contact__rows {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly; } }
+    justify-content: space-between; } }
 
 @media (min-width: 1281px) {
   .contact__rows {
     padding-right: 20px; } }
-
-@media (min-width: 1025px) {
-  .contact__row {
-    width: 20%; } }
 
 .contact__row p, .contact__row address {
   font-size: 1.2em; }
@@ -10172,9 +10166,7 @@ footer {
   @media (min-width: 1281px) {
     .contact-maps {
       margin-top: 0;
-      width: 600px;
-      height: 450px;
-      padding-left: 20px; } }
+      width: 1200px; } }
 
 .partners {
   padding: 20px 0 60px;
