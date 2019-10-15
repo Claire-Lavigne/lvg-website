@@ -14,7 +14,7 @@
         flex-flow: column;
         @include computers {
             flex-flow: row wrap;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
             margin-top: 80px;
             @include large-screens {
@@ -29,10 +29,9 @@
     }
     &__rows {
         @include computers {
-            border-right: 1px solid $black;
             display: flex;
             flex-flow: row wrap;
-            justify-content: space-evenly;
+            justify-content: space-between;
         }
         @include large-screens {
             padding-right: 20px;
@@ -40,7 +39,7 @@
     }
     &__row {
         @include computers {
-            width: 50%;
+           
         }
         p, address {
             font-size: 1.2em;
@@ -75,14 +74,13 @@
         }
         @include computers {
             margin-top: 0;
-            width: 400px;
+            width: 1000px;
             height: 300px;
         }
         @include large-screens {
             margin-top: 0;
-            width: 600px;
-            height: 450px;
-            padding-left: 20px;
+            width: 1200px;
+ 
         }
     }
 }
