@@ -1,0 +1,21 @@
+footer {
+    //font-family: none;
+    text-transform: uppercase;
+    background: $black;
+    color: $white;
+    padding: 30px 0 3px;
+    i{
+        color: $white;
+        &:hover{
+            color: $pink;
+        }
+    }
+   .mentions-link{
+       padding: 5 10px;
+       letter-spacing: 0.5em;
+        &--bottom {
+            padding-top: 5px;
+        }
+        
+    }
+}

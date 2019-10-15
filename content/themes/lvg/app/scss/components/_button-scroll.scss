@@ -1,0 +1,33 @@
+#button-scroll{
+    position: fixed;
+    display: block;
+    color: $pink;
+    top: 90%;
+    left: 89%;
+    width: 30px;
+    height: 30px;
+    z-index: 10;
+    padding: 2px 0;
+    border-radius:4px;
+    background-color: $black; 
+    border: 1px solid $dark-grey;
+    i{
+        position: relative;
+        bottom: .1em;
+    
+    }
+
+        @include mobiles {
+        padding: 5px 0; 
+        left: 90%;
+        i{
+            position: relative;
+            bottom: .2em;
+        }
+    }
+         @include computers {
+        left: 95%;
+ 
+    }
+
+}

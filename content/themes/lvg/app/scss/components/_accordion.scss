@@ -1,0 +1,50 @@
+.arrow{
+    animation: arrow 2s infinite;
+}
+// 
+
+.prices-preview {
+    .accordion {
+        position: relative;
+        bottom: 25px;
+    }
+    .card-header {
+        cursor: pointer;
+        min-height: 66px;
+    }
+    #headingOne, #headingFour, #headingSix, #headingSeven {
+        padding-top: 40px;
+    }
+}
+
+
+.accordion-faq {
+    position: relative;
+    top: 25px;
+    .card {
+        &:first-child {
+            border-top: none;
+        }
+        // &:last-child {
+            //     border-bottom: 2px solid $pink;
+        // }
+        &:hover {
+            background: #eee;
+        }
+        .card-header {
+            font-size: 1.2em;
+            padding: 20px;
+        }
+        .card-body {
+            text-align: center;
+            font-size: 0.9em;
+            padding: 20px;
+            a:hover {
+                color: inherit;
+            }
+        }
+        [aria-expanded="true"] {
+            background: #eee;
+        }
+    }
+}

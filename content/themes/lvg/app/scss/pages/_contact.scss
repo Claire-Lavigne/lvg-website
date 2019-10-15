@@ -1,0 +1,107 @@
+.contact {
+    &-title {
+        margin: 100px auto;
+    }
+    &-subtitle {
+        font-size: 1.5em;
+        margin: 30px auto;
+        i {
+            padding-bottom: 10px;
+        }
+    }
+    &__inline {
+        display: flex;
+        flex-flow: column;
+        @include computers {
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 80px;
+            @include large-screens {
+                margin: 80px 20% 0;
+                
+            }
+        }
+    }
+    &__block {
+        width: auto;
+        margin: 0 auto;
+    }
+    &__rows {
+        @include computers {
+            border-right: 1px solid $black;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        }
+        @include large-screens {
+            padding-right: 20px;
+        }
+    }
+    &__row {
+        @include computers {
+            width: 50%;
+        }
+        p, address {
+            font-size: 1.2em;
+        }
+        address {
+            position: relative;
+            bottom: 15px;
+        }
+        i {
+            color: $black;
+            padding: 20px 0;
+            margin: 0 auto;
+        }
+        a {
+            font-weight: inherit;
+        }
+        i:hover, a:hover {
+            color: inherit;
+        }
+    }
+    &-maps {
+        margin: 80px auto 0;
+        width: 100%;
+        height: 300px;
+        @include mobiles {
+            width: 400px;
+            height: 400px;
+        }
+        @include tablets {
+            width: 600px;
+            height: 450px;
+        }
+        @include computers {
+            margin-top: 0;
+            width: 400px;
+            height: 300px;
+        }
+        @include large-screens {
+            margin-top: 0;
+            width: 600px;
+            height: 450px;
+            padding-left: 20px;
+        }
+    }
+}
+
+
+.partners {
+    padding: 20px 0 60px;
+    @include flexbox;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    &-logo {
+        height: auto;
+        margin: 80px 100px;
+        @include tablets {
+            margin: 40px 80px;
+        }
+        @include computers {
+            margin: 40px 20px;
+        }
+    }
+}

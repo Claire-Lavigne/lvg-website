@@ -1,0 +1,21 @@
+.carousel{
+    img{
+        object-fit: cover;
+        object-position: 30%;
+        @include tablets {
+            object-position: unset;
+        }
+        height: 100vh;
+    }
+    a {
+        position: absolute;
+        top: 10%;
+        height: 90%;
+        z-index: 20;
+    }
+}
+
+.carousel-header {
+    position: absolute;
+    top: 0;
+}

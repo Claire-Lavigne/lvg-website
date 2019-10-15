@@ -1,0 +1,58 @@
+.feedbacks {
+    @include flexbox;
+        flex-flow: column nowrap;
+    @include tablets {
+        flex-flow: row nowrap;
+        
+    }
+    &__block {
+        margin: 40px auto;
+        width:100%;
+    }
+    &__circle {
+        border-radius: 50%;
+        padding: 70px;
+        margin: 10px auto;
+        width: 60px;
+        height: auto;
+        background-position: center;
+        background-size: cover;
+    }
+    &__littlebloc {
+        display: flex;
+        flex-flow: column;
+    }
+    &__name {
+        font-weight: bold;
+        text-transform: capitalize;
+        margin: 0.8em;
+    }
+    &__date {
+        font-weight: lighter;
+        text-transform: lowercase;
+        font-size: 0.6em;
+        margin: 0.8em;
+        color: $black;
+    }
+    &__stars {
+        color: $black;
+    }
+    &__quote {
+        text-align: center;
+        font-weight: normal;
+        line-height: 1.5em;
+        margin:auto;
+        width:300px;
+        font-style: italic;
+        span {
+            padding:0 3px;
+            color: $black;
+            font-size: 1.8em;
+        }
+    }
+    &__social{
+        display: flex;
+        width: 100%;
+        color: inherit;
+    }
+}

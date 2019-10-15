@@ -1,0 +1,65 @@
+.header {
+    &-slides {
+        height: 100vh;
+    }
+    &-zindex {
+        position: relative;
+        z-index: 20;
+    }
+    &__top {
+        display: inline-block;
+        width: 100%;
+    }
+    &__logo {
+        float: left;
+        width: 100px;
+        height: auto;
+        @include tablets {
+            width: 180px;
+            float: none;
+        }
+    }
+    &__icon {
+        float: right;
+        margin: 1em;
+        color: $pink;
+        @include tablets {
+            display: none;
+        }
+    }
+    &__nav {
+        display: none;
+        @include tablets {
+            display: flex;
+            justify-content: center;
+        }
+        ul{
+            display: flex;
+            font-size: 1.2em;
+            @include computers {
+                font-size: 1.4em;
+            }
+            a {
+                margin: 10px 20px;
+                color: $pink;
+                letter-spacing: 0.3vh;
+                position: relative;
+                text-decoration: none;
+                text-transform: uppercase;
+                // &::before {
+                //     position: absolute;
+                //     top: -2px;
+                //     left: 0;
+                //     overflow: hidden;
+                //     max-width: 0;
+                //     color: $black;
+                //     content: attr(data-hover);
+                //     transition: max-width 0.5s ease-in-out;
+                // }
+                // &:hover::before, &:focus::before{
+                //     max-width: 100%;
+                // }
+            }
+        }
+    }
+}

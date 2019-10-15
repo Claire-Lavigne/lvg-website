@@ -1,0 +1,62 @@
+.modal {
+    margin-top: 50px;
+    @include tablets{
+        margin-top: 140px;
+    }
+    &-dialog {
+        height: 100vh;
+        margin: 0 auto;
+        width: 90%;
+        font-size: 0.8em;
+        @include computers{
+            font-size: inherit;
+        }
+    }
+    &-body {
+        max-height: 90vh;
+        @include computers{
+            max-height: 65vh;
+            span {
+                font-size: 1em;
+            }
+        }
+        @include large-screens{
+            max-height: 100vh;
+        }
+    }
+    /*
+    &__home{
+        padding: 10px;
+        opacity: 0.8;
+        background-image: url(/images/studio3.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    */
+    &-form{
+        p,input{
+            margin: 0 auto;
+            text-transform: uppercase;
+            @include computers{
+                font-size: 1.2em;
+                width: 300px;
+                margin: 20px auto;
+            }
+        }
+    }
+    &-title {
+        border: 2px solid $black;
+        border-radius: 3px;
+        padding: 10px;
+        margin: 0 auto 20px;
+        width: 220px;
+        @include computers{
+            font-size: 1.8em;
+            margin: 0 auto 30px;
+            width: 300px;
+        }
+    }
+    &-close{
+        outline: none !important;
+    }
+}

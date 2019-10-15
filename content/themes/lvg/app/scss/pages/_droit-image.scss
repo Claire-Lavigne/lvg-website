@@ -1,0 +1,121 @@
+.droit{
+    padding: 40px 20px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.8em;
+    text-transform: initial;
+    background:$white;
+    @include computers {
+        width: 1200px;
+        font-size: 1em;
+    }
+    &__block {
+        margin: 20px auto;
+        padding: 50px 5px;
+        @include mobiles {
+            padding: 50px;
+        }
+        height: auto;
+        &--small {
+            width: 90%;
+            margin: 20px auto;
+            font-size: 1.2em;
+        }
+    }
+    h1, h2, h3 {
+        color: $black;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    h1 {
+        margin: 0 auto;
+        padding: 50px 10px;
+        font-size: 1.6em;
+        letter-spacing: 0.2em;
+        @include mobiles {
+            letter-spacing: 0.5em;
+        }
+    }
+    h2 {
+        padding-bottom: 30px;
+        line-break: 1.5em;
+        font-size: 1.4em;
+    }
+    p, ul{
+        margin: 0 auto;
+        padding: 10px 0;
+        @include mobiles {
+            padding: 10px;
+        }
+        li {
+            padding: 5px 0;
+            font-size: 0.8em;
+            @include mobiles {
+                font-size: initial;
+            }
+        }
+    }
+    p {
+        font-size: 1.2em;
+        padding: 15px;
+        @include computers {
+            padding: 15px 40px;
+        }
+    }
+    strong {
+        font-weight: 800;
+    }
+    input{
+        margin: 0 5px;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid grey;
+        &:focus {
+            outline: none;
+            border-bottom: 2px solid $black;
+            transition: 0.5s border-bottom;
+        }
+        &[type=date] {
+            color: grey;
+        }
+        &[type=checkbox] {
+            width: 15px;
+            height: 15px;
+            padding: 5px;
+        }
+    }
+    .checkbox {
+        margin: 0 45px;
+        text-align: left;
+        & > label {
+        display: inline;
+        padding: 5px;
+        }
+    }
+    .signature-component {
+        display: block;
+        margin: 10px;
+    }
+    .signature-pad {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        border: 1px solid; 
+        height: 200px;
+        width: 90%;
+        @include computers {
+            width: 50%;
+        }
+    }
+    .button--small {
+        display: inline-block;
+        width: 100px;
+    }
+    &--image{
+        width: 130px;
+        height: auto;
+    }
+
+    
+
+}

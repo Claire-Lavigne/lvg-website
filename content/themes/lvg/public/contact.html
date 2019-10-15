@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo-lvgstudio.png">
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="scss/main.scss" />
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <img class="header__logo" src="images/logo-lvgstudio.png" alt="logo LVG Studio">
+            <i class="header__icon ui-button fa fa-bars fa-2x" aria-hidden="true"></i>
+        </div>
+        <nav class="header__nav">
+            <ul>
+              <li><a data-hover="Home" href="index.html">Home</a></li>
+              <li><a data-hover="Portfolio" href="portfolio.html">Portfolio</a></li>
+              <li><a data-hover="Tarifs" href="prices.html">Tarifs</a></li>
+              <li><a data-hover="Contact" href="contact.html">Contact</a></li>
+              <li><a data-hover="FAQ" href="faq.html">FAQ</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <main>
+        <h2 class="contact-title">Laurent Lavigne<br>Photographe Professionnel à Albi
+        </h2>
+
+        <div class="contact-subtitle">
+            <i class="fa fa-calendar-check-o fa-2x" aria-hidden="true"></i>
+            <h3>Accueil sur RDV uniquement</h3>
+        </div>
+        
+        <section class="contact__inline">
+            <div class="contact__block">
+                <div class="contact__rows">
+                    <div class="contact__row">
+                        <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                        <p><a href="tel:+33681021789">06.81.02.17.89</a></p>
+                    </div>
+                    <div class="contact__row">
+                        <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                        <p><address><a href="http://maps.google.com/?q=LVG+Studio,432+route+de+Castres,81990+PUYGOUZON" target="_blank">
+                        LVG Studio<br>432 route de Castres<br>81990 PUYGOUZON</a></address></p>
+                    </div>
+                    <div class="contact__row">
+                        <i class="fa fa-car fa-2x" aria-hidden="true"></i>
+                        <p>Parking gratuit</p>
+                    </div>
+                    <div class="contact__row">
+                        <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                        <p><a href="mailto:lavignephotographe@gmail.com">lavignephotographe@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact__block">
+                <!-- maps -->
+                <iframe class="contact-maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5750.236458201688!2d2.153212!3d43.894818!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbffded9b3f3e5a7d!2sLVG+STUDIO+Photographe+sur+RDV!5e0!3m2!1sfr!2sfr!4v1563917626208!5m2!1sfr!2sfr" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2 class="contact-title">Nous contacter</h2>
+            <form  class="form-contact" action="">
+                 <div class="form-informations">
+                    <input type="text" name="lastname" placeholder="Nom" autocomplete="family-name" required><br>
+                    <input type="text" name="firstname" placeholder="Prénom" autocomplete="given-name" required><br>
+                    <input type="email" name="email" placeholder="Email" autocomplete="email" required><br>
+                    <input type="tel" name="tel" placeholder="Téléphone" autocomplete="tel" required><br>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                </div>
+            </form>
+            <button class="button--pink" type="submit">Envoyer</button>             
+        </section>
+
+        <section class="contact">
+            <h2 class="contact-title">Nos partenaires</h2>
+            <div class="partners">
+                <img class="partners-logo" src="images/contact/partenaire-geantcasino.png" alt="Logo partenaire Géant Casino Albi">
+                <img class="partners-logo" src="images/contact/partenaire-traiteur.png" alt="Logo partenaire Alban Traiteur Albi">
+                <img class="partners-logo" src="images/contact/partenaire-aerodrome.png" alt="Logo partenaire Aérodrome Albi">
+                <img class="partners-logo" src="images/contact/partenaire-leclerc.png" alt="Logo partenaire E-Leclerc Albi">
+            </div>
+        </section>
+    </main>
+
+<footer>
+        <a href="https://www.facebook.com/lvgstudio/" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+        <a href="https://www.instagram.com/lavignephotographe/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+        <p class="mentions-link"><a href="mentions-legales.html">MENTIONS LÉGALES ET CGU </a><br><span id="year"></span><a href="index.html">LVG STUDIO</a><br><a href="droit-image.html">DROIT D'IMAGE</a></p>
+        <p>SIRET 788 675 858 00013 - R.M. : 81 - R.C.S. : G8101 GREFFE D'ALBI - APE/NAFA : 7420ZR</p>
+</footer>
+
+<div class="menu-mobile">
+    <a href="#" class="ui-button close-menu">
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="prices.html">Tarifs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+    </nav>
+    <div class="social-nav">
+      <ul>
+        <li><a href="https://www.facebook.com/lvgstudio/" target="_blank"><i class="fa fa-facebook-square fa-3x"></i></a></li>
+        <li><a href="https://www.instagram.com/lavignephotographe/" target="_blank"><i class="fa fa-instagram fa-3x"></i></a></li>      
+      </ul>
+    </div>
+</div>
+ <!--scroll button-->
+<div id="button-scroll">
+    <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+</div>
+<!--end button-->
+  <script src="js/app.js"></script>
+
+</body>
+</html>

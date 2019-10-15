@@ -1,0 +1,32 @@
+.dot{
+   display: none;
+   a{
+      display: inline-block;
+      position: fixed;
+      top: 45%;
+      right: 4%;
+      width: 10px;
+      height: 10px;
+      background: $grey;
+      border-radius: 50%;
+      &:hover{
+         align-content: center;
+         background-color: black;
+    }  
+}
+   &:nth-child(2){
+      a{
+         margin: 15px 0;
+      }   
+   }
+   &:nth-child(3){
+      a{
+         margin: 30px 0;
+      }      
+   }
+   &:nth-child(4){
+      a{
+         margin: 45px 0;
+      }      
+   }
+}

@@ -1,0 +1,77 @@
+.photographer{
+    &__block {
+        margin: 40px auto;
+        // box-shadow: 0 0 0.8em lighten($box-color, 50%);
+        @include tablets{
+            margin: 80px auto;
+        }
+        @include computers{
+            margin: 130px auto;
+        }
+        @include large-screens{
+            height: 800px;
+            margin: 130px auto;
+        }
+        img{        
+            width: 300px;
+            margin: 10px auto;
+            height: auto;
+           // padding: 1.2em;
+            position: relative;
+            z-index: 2;
+         //   border: 3px solid $black;
+          //  background: white;
+            @include tablets{
+                width: 400px;
+                margin: 5px;
+                right: 23%;
+            }
+            @include computers{
+                width: 480px;
+                margin: 5px;
+                right: 25%;
+            }
+        }
+    }
+    &__text {
+        width: auto;
+        height: auto;
+        text-align: justify;
+        background-color:$dark-grey;
+        color: white;
+        position: relative;
+        z-index: -10;
+        margin: 0 auto;
+        padding: 1em;
+        p{
+            font-size: 1.5em;          
+        }
+        @include mobiles{
+            width: 85%;
+            height: auto;
+            padding: 3em 5em;
+            margin: 0 auto;
+        }
+        @include tablets{
+            position: relative;
+            bottom: 25em;
+            left: 20%;
+            width: 60%;
+            padding: 4em 10em;
+            padding-right: 2em;
+        }
+        @include computers{
+            padding: 10em 11em;
+            padding-right: 4em;
+        }
+        @include large-screens{
+            width: 50%;
+            height: 500px;
+            padding: 8em 12em;
+            padding-right: 8em;
+            left: 10%;
+            bottom: 20em;
+        }
+    }
+ 
+}

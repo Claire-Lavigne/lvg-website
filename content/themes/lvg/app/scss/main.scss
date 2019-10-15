@@ -1,0 +1,41 @@
+@import
+    'abstracts/mixin',
+    'abstracts/variables';
+
+@import
+    '~font-awesome/scss/font-awesome',
+    '~reset-css/sass/reset',
+    '~owl.carousel/dist/assets/owl.carousel.css',
+    '~bootstrap/scss/bootstrap';
+
+@import
+    'base/animations',
+    'base/base';
+
+@import
+    'components/accordion',
+    'components/button-scroll',
+    'components/buttons',
+    'components/carousel',
+    'components/dots',
+    'components/feedbacks',
+    'components/forms',
+    'components/galery',
+    'components/mobile-nav',
+    'components/modal',
+    'components/photographer';
+
+@import
+     'layout/header',
+     'layout/footer';
+
+@import
+    'pages/contact',
+    'pages/droit-image',
+    'pages/faq',
+    'pages/mentions-legales',
+    'pages/portfolio',
+    'pages/prices';
+
+@import
+    'shame';

@@ -1,0 +1,106 @@
+ 
+
+.portfolio-droit{
+    background-color: $black;
+    padding: 100px 0 ;
+    p{
+        font-size: 0.9em;
+        color: $white;        
+        @include tablets{
+            font-size: 1.1em;           
+        }
+        @include computers{
+            font-size: 1.4em;
+            
+        }
+    }
+}
+
+
+
+
+.portfolio-images{
+    display: flex;
+    justify-content: center;
+    background-color: $black;
+    
+    .row{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        .photo{
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+ 
+            @include tablets{
+                width: calc(100% / 2 );
+                
+            }
+            @include computers{
+                width: calc(100% / 3);
+                
+            }
+            cursor: pointer;
+            height: auto;
+            h2{
+                margin: 190px 0;
+                color: $white;
+            }
+            &:hover{
+                background-color: $black;
+                opacity: 0.6;
+                transition: all 0.9s;
+            }
+        }
+    }
+}
+
+//===============Category page portfolio=================
+
+.portfolio-category{
+    background-color: $black;
+    &__row{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    &__photo{
+        background-size: cover;
+        background-position:  center;
+        width: calc(100%);
+        cursor: pointer;
+        height: 600px;
+        @include tablets{
+            width: calc(100%/2 );
+        }
+        @include computers{
+          // width: calc(100%/3 );
+          /*
+            width: 40%;
+            &:nth-child(4n-2),
+            &:nth-child(4n-1) {
+                width: 60%;
+            }
+            */
+
+      
+            &:nth-child(4n-3){
+                width: 25%;
+
+            }
+            &:nth-child(4n-2){
+                width: 25%;
+            }
+            &:nth-child(4n-1) {
+                width: 50%;
+            }
+        }
+ 
+        &:hover{
+            background-color: $black;
+            opacity: 0.6;
+            transition: opacity $duration-fast;
+        }
+    }
+}

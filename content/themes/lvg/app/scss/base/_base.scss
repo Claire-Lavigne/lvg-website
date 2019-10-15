@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700|Great+Vibes|Quicksand:700|Raleway|Sacramento&display=swap');
+
+body {
+    font-family: $body-font; 
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    text-align: center;
+    &.menu-visible{
+        section,header,.carousel,.portfolio-droit,.portfolio-images,footer,main{
+            filter: blur(10px);
+            animation: reveal $duration-medium ease;
+        }
+        .menu-mobile{
+            visibility: visible;
+        }
+    }
+
+    a, i {
+        color: $pink;
+        font-weight: bold;
+        padding: 0;
+        &:hover{
+            text-decoration: none;
+            color: $white;
+        }
+    }
+
+    strong, b {
+        font-weight: bold;
+    }
+    
+    em{
+        color: rgb(70, 70, 70);
+        font-size: smaller;
+        font-style: italic;
+    }
+}
+
+
+// Titles typography
+// sizes : 12 14 18 24 36 48 60
+
+h1 {
+    color: $white;
+    // font-size: 2.8em;
+    font-size: 2.2em;
+    font-weight: bold;
+    line-height: 1.5em;
+    z-index: 20;
+    margin: 300px auto 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 30px auto;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
