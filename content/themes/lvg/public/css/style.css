@@ -9963,71 +9963,30 @@ form {
     outline: none !important; }
 
 .photographer {
-  background-color: #181818; }
+  background-color: #181818;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .photographer__block {
-    margin: auto; }
-    @media (min-width: 768px) {
-      .photographer__block {
-        margin: auto; } }
-    @media (min-width: 1025px) {
-      .photographer__block {
-        margin: auto; } }
-    @media (min-width: 1281px) {
-      .photographer__block {
-        height: 800px; } }
-    .photographer__block img {
-      width: 300px;
-      margin: 10px auto;
-      height: auto;
-      position: relative;
-      z-index: 2; }
-      @media (min-width: 481px) {
-        .photographer__block img {
-          width: 450px; } }
-      @media (min-width: 768px) {
-        .photographer__block img {
-          width: 500px;
-          margin: 150px;
-          z-index: 2; } }
+    margin: 10px auto;
+    width: 100%; }
+  .photographer__img {
+    margin: 0 auto; }
+    .photographer__img img {
+      width: 320px;
+      height: auto; }
       @media (min-width: 1025px) {
-        .photographer__block img {
-          width: 450px;
-          margin: 5px;
-          right: 25%;
-          top: 200px; } }
+        .photographer__img img {
+          width: 450px; } }
   .photographer__text {
-    width: auto;
     height: auto;
     text-align: justify;
     color: white;
-    position: relative;
-    z-index: 2;
     margin: 0 auto;
-    padding: 1em; }
+    padding: 1em;
+    text-align: center; }
     .photographer__text p {
       font-size: 1.4em; }
-    @media (min-width: 481px) {
-      .photographer__text {
-        width: 85%;
-        height: auto;
-        padding: 3em 2em;
-        margin: 0 auto; } }
-    @media (min-width: 768px) {
-      .photographer__text {
-        position: relative;
-        bottom: 5em;
-        padding-right: 2em; } }
-    @media (min-width: 1025px) {
-      .photographer__text {
-        position: relative;
-        width: 40%;
-        left: 20%;
-        bottom: 13.5em; } }
-    @media (min-width: 1281px) {
-      .photographer__text {
-        position: relative;
-        height: 500px;
-        bottom: 15em; } }
 
 .header-slides {
   height: 100vh; }
