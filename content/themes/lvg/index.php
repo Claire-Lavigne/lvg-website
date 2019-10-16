@@ -55,21 +55,22 @@
   <!-- fin carousel -->
   <section class="photographer" id="three">
       <div class="photographer__block"> 
-        <img src="<?php echo get_template_directory_uri() . '/public/images/laurent.jpg' ?>" alt="">
-        <h2></h2>
-         
-      </div>
-      <div class="photographer__text">
-        <h2>Laurent Lavigne</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Ipsa ad ipsam nostrum in unde laboriosam sint officiis accusantium 
-          suscipit non, cum molestias 
-          aspernatur dolorem quasi id perferendis! Laudantium, itaque sit!
-          suscipit non, cum molestias 
-          aspernatur dolorem quasi id perferendis! Laudantium, itaque sit!
-        </p>
+        <div class="photographer__img">
+          <img src="<?php echo get_template_directory_uri() . '/public/images/home/laurent.jpg' ?>" alt="">
+        </div>
+        <div class="photographer__text">
+          <h2>Laurent Lavigne</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Ipsa ad ipsam nostrum in unde laboriosam sint officiis accusantium 
+            suscipit non, cum molestias 
+            aspernatur dolorem quasi id perferendis! Laudantium, itaque sit!
+            suscipit non, cum molestias 
+            aspernatur dolorem quasi id perferendis! Laudantium, itaque sit!
+          </p>
+        </div>
       </div>
     </section> 
+
     <section class="feedbacks" id="four">
       <div class="owl-carousel">
         <div class="feedbacks__block">
