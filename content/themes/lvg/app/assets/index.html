@@ -7,6 +7,8 @@
   <title>Home</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="scss/main.scss" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
 </head>
 <body class="">
   <header class="header header-slides header-zindex" id="one">
@@ -77,10 +79,10 @@
   <!-- fin carousel -->
     <section class="photographer" id="three">
       <div class="photographer__block"> 
-        <div class="photographer__img">
-          <img src="./images/laurent.jpg" alt="">
+        <div class="photographer__img"   >
+          <img data-aos="fade-right" src="./images/laurent.jpg" alt="">
         </div>
-        <div class="photographer__text">
+        <div class="photographer__text" data-aos="fade-left">
           <h2>Laurent Lavigne</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Ipsa ad ipsam nostrum in unde laboriosam sint officiis accusantium 
@@ -166,6 +168,7 @@
   <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
 </div>
 <!--end scroll button-->
-  <script src="js/app.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

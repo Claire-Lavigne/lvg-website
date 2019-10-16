@@ -74,3 +74,5 @@ $('#button-scroll').click(function() {
 };
 
 $(app.init);
+
+ AOS.init();
