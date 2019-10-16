@@ -56,7 +56,7 @@
   <section class="photographer" id="three">
       <div class="photographer__block"> 
         <div class="photographer__img">
-          <img src="<?php echo get_template_directory_uri() . '/public/images/home/laurent.jpg' ?>" alt="">
+          <img src="<?php echo get_template_directory_uri() . '/public/images/laurent.jpg' ?>" alt="">
         </div>
         <div class="photographer__text">
           <h2>Laurent Lavigne</h2>
