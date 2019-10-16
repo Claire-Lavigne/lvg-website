@@ -1,10 +1,10 @@
 .photographer{
     background-color: $dark-grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     &__block {
-        margin: 10px auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         // box-shadow: 0 0 0.8em lighten($box-color, 50%);
         // @include tablets{
@@ -19,8 +19,11 @@
         // }
     }
     &__img{
+        margin: 10px auto;
         // width: 300px;
-        margin: 0 auto;
+        @include computers{
+            width: 45%;
+        }
         img{
             width: 320px;
             height: auto;
@@ -47,19 +50,21 @@
         // }
     }
     &__text {
+        margin: 10px auto;
         // width: 50vw;
         // width: auto;
-        height: auto;
-        text-align: justify;    
+        height: auto;   
         color: white;
         // position: relative;
         // z-index: 2;
         margin: 0 auto;
-        padding: 1em;
         text-align: center;
+        @include computers{
+            width: 50%;
+        }
         p{
-            font-size: 1.4em; 
-         
+            font-size: 1.4em;
+            padding: 1em;
         }
         // @include mobiles{
         //     width: 85%;
