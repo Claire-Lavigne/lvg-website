@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:400,700|Great+Vibes|Quicksand:700|Raleway|Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700|Great+Vibes|Quicksand:300,400,500,600,700|Raleway:200,300,400,500,600,700,800,900|Sacramento&display=swap');
 
 body {
     font-family: $body-font; 
@@ -42,6 +42,7 @@ body {
 // sizes : 12 14 18 24 36 48 60
 
 h1 {
+    font-family: $title-font;
     color: $white;
     // font-size: 2.8em;
     font-size: 2.2em;
@@ -52,12 +53,14 @@ h1 {
 }
 
 h2 {
+    font-family: $title-font;
     font-size: 2em;
     margin: 30px auto;
     font-weight: bold;
 }
 
 h3 {
+    font-family: $title-font;
     font-size: 1.1em;
     font-weight: bold;
 }
