@@ -59,5 +59,6 @@ Il souhaite moderniser son site, dans le but d'attirer davantage de clients et d
 - Webpack
 - Composer
 - NPM
+- AOS
 - Wordpress
     - Plugins : Contact form 7
