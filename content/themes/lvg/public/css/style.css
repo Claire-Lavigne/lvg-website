@@ -10066,32 +10066,21 @@ footer {
   .contact-subtitle i {
     padding-bottom: 10px; }
 
-.contact__inline {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center; }
-  @media (min-width: 1025px) {
-    .contact__inline {
-      margin: 80px auto; } }
+@media (min-width: 1025px) {
+  .contact__inline {
+    margin: 80px auto; } }
 
 .contact__block {
   width: 100%;
   margin: 20px auto; }
-  @media (min-width: 1025px) {
-    .contact__block {
-      width: 50%; } }
 
 .contact__rows {
-  background: red; }
+  width: 100%; }
   @media (min-width: 1025px) {
     .contact__rows {
-      display: inline-flex;
-      width: 100%;
-      padding: 0 10px; } }
-  @media (min-width: 1281px) {
-    .contact__rows {
-      padding-right: 20px; } }
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around; } }
 
 .contact__row p, .contact__row address {
   font-size: 1.2em; }
@@ -10113,9 +10102,9 @@ footer {
 
 .contact-maps {
   margin: 0 auto;
-  min-width: 320px;
-  max-width: 600px;
-  height: 450px; }
+  width: 100%;
+  height: 450px;
+  overflow: hidden; }
 
 .partners {
   padding: 20px 0 60px;
