@@ -9703,10 +9703,10 @@ h3 {
     #button-scroll {
       left: 95%; } }
 
-.button--pink {
-  width: 200px;
+.button-primary {
+  width: 220px;
   height: 45px;
-  border: none;
+  border: solid black 2px;
   border-radius: 3px;
   text-transform: uppercase;
   display: block;
@@ -9717,11 +9717,10 @@ h3 {
   margin: 30px auto;
   font-weight: bold;
   outline: 0 !important; }
-  .button--pink:hover {
+  .button-primary:hover {
     background-color: white;
     color: black;
-    transition: all 0.7s;
-    border: solid black 2px; }
+    transition: all 0.7s; }
 
 .carousel img {
   object-fit: cover;
@@ -9937,12 +9936,9 @@ form {
     max-height: 90vh; }
     @media (min-width: 1025px) {
       .modal-body {
-        max-height: 65vh; }
+        max-height: 80vh; }
         .modal-body span {
           font-size: 1em; } }
-    @media (min-width: 1281px) {
-      .modal-body {
-        max-height: 100vh; } }
   .modal-form p, .modal-form input {
     margin: 0 auto;
     text-transform: uppercase; }
@@ -10039,6 +10035,7 @@ form {
         font-size: 1.4em; } }
 
 .nav-link {
+  cursor: pointer;
   letter-spacing: 0.3vh;
   text-transform: uppercase;
   text-decoration: none;
@@ -10047,23 +10044,19 @@ form {
   margin: 10px 20px;
   position: relative;
   opacity: 1; }
-
-.nav-link:hover {
-  color: #000; }
-
-.nav-link::before {
-  transition: 300ms;
-  height: 5px;
-  content: "";
-  position: absolute;
-  background-color: #000; }
-
-.nav-link-ltr::before {
-  width: 0%;
-  bottom: 5px; }
-
-.nav-link-ltr:hover::before {
-  width: 100%; }
+  .nav-link:hover {
+    color: #000; }
+  .nav-link::before {
+    transition: 300ms;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: #000; }
+  .nav-link-ltr::before {
+    width: 0%;
+    bottom: 5px; }
+  .nav-link-ltr:hover::before {
+    width: 100%; }
 
 footer {
   text-transform: uppercase;

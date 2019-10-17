@@ -65,7 +65,8 @@
 }
 
   
-  .nav-link {
+.nav-link {
+    cursor: pointer;
     letter-spacing: 0.3vh;
     text-transform: uppercase;
     text-decoration: none;
@@ -74,25 +75,21 @@
     margin: 10px 20px;
     position: relative;
     opacity: 1;
-  }
-  
-  .nav-link:hover {
-    color: #000;
-  }
-  
-  .nav-link::before {
-    transition: 300ms;
-    height: 5px;
-    content: "";
-    position: absolute;
-    background-color: #000;
-  }
-  
-  .nav-link-ltr::before {
-    width: 0%;
-    bottom: 5px;
-  }
-  
-  .nav-link-ltr:hover::before {
-    width: 100%;
-  }
+    &:hover {
+        color: #000;
+    }
+    &::before {
+        transition: 300ms;
+        height: 2px;
+        content: "";
+        position: absolute;
+        background-color: #000;
+    }
+    &-ltr::before {
+        width: 0%;
+        bottom: 5px;
+    }
+    &-ltr:hover::before {
+        width: 100%;
+    }
+}

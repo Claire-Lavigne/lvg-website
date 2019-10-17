@@ -51,7 +51,7 @@ Template Name: Contact
                     <?php echo do_shortcode('[contact-form-7 id="24" title="Formulaire de contact"]'); ?>
                 </div>
             </form>
-              
+            <!-- <button class="button-primary" type="submit">Envoyer</button> -->
         </section>
          
         <section>
