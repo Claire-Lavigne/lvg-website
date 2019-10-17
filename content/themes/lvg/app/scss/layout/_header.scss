@@ -39,13 +39,13 @@
             @include computers {
                 font-size: 1.4em;
             }
-            a {
-                margin: 10px 20px;
-                color: $pink;
-                letter-spacing: 0.3vh;
-                position: relative;
-                text-decoration: none;
-                text-transform: uppercase;
+            // a {
+            //     margin: 10px 20px;
+            //     color: $pink;
+            //     letter-spacing: 0.3vh;
+            //     position: relative;
+            //     text-decoration: none;
+            //     text-transform: uppercase;
                 // &::before {
                 //     position: absolute;
                 //     top: -2px;
@@ -59,7 +59,40 @@
                 // &:hover::before, &:focus::before{
                 //     max-width: 100%;
                 // }
-            }
+            // }
         }
     }
 }
+
+  
+  .nav-link {
+    letter-spacing: 0.3vh;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $pink;
+    padding: 20px 0px;
+    margin: 10px 20px;
+    position: relative;
+    opacity: 1;
+  }
+  
+  .nav-link:hover {
+    color: #000;
+  }
+  
+  .nav-link::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: #000;
+  }
+  
+  .nav-link-ltr::before {
+    width: 0%;
+    bottom: 5px;
+  }
+  
+  .nav-link-ltr:hover::before {
+    width: 100%;
+  }

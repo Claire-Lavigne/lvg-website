@@ -9715,7 +9715,6 @@ h3 {
   color: white;
   background: black;
   margin: 30px auto;
-  font-family: "Quicksand", sans-serif;
   font-weight: bold;
   outline: 0 !important; }
   .button--pink:hover {
@@ -10038,13 +10037,33 @@ form {
     @media (min-width: 1025px) {
       .header__nav ul {
         font-size: 1.4em; } }
-    .header__nav ul a {
-      margin: 10px 20px;
-      color: #960d69;
-      letter-spacing: 0.3vh;
-      position: relative;
-      text-decoration: none;
-      text-transform: uppercase; }
+
+.nav-link {
+  letter-spacing: 0.3vh;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #960d69;
+  padding: 20px 0px;
+  margin: 10px 20px;
+  position: relative;
+  opacity: 1; }
+
+.nav-link:hover {
+  color: #000; }
+
+.nav-link::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #000; }
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 5px; }
+
+.nav-link-ltr:hover::before {
+  width: 100%; }
 
 footer {
   text-transform: uppercase;

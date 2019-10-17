@@ -24,7 +24,7 @@
               'theme_location' => 'menu-top',
              'container_class' => 'header_nav',
               'container' => '',
-             'items_wrap'  => '<li><a data-hover="%1$s" href="%2$s">%3$s</a></li>',
+             'items_wrap'  => '<li><a class="nav-link nav-link-ltr" data-hover="%1$s" href="%2$s">%3$s</a></li>',
               'echo' => true
             ]);
              $menu = strip_tags($menu, '<nav></nav>');
