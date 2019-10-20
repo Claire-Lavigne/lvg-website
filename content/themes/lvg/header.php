@@ -4,6 +4,7 @@
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="<?php echo get_template_directory_uri() . '/public/images/home/logo-lvgstudio2.png' ?>)">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title><?php bloginfo('name'); ?></title>
   <?php wp_head(); ?>
 </head>

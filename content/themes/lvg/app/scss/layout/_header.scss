@@ -84,12 +84,10 @@
         content: "";
         position: absolute;
         background-color: #000;
-    }
-    &-ltr::before {
         width: 0%;
         bottom: 5px;
     }
-    &-ltr:hover::before {
+    &:hover::before {
         width: 100%;
     }
 }
