@@ -4,13 +4,13 @@
     </a>
     <nav class="mobile-nav">
       <ul>
-        <li><a data-hover="Home" href="index.html">Home</a></li>
-        <li><a data-hover="Portfolio" href="portfolio.html">Portfolio</a></li>
-        <li><a data-hover="Tarifs" href="prices.html">Tarifs</a></li>
-        <li><a data-hover="Contact" href="contact.html">Contact</a></li>
-        <li><a data-hover="FAQ" href="faq.html">FAQ</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="prices.html">Tarifs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
         <!-- Button modal -->
-        <li><a class="nav-link nav-link-ltr" href="" data-toggle="modal" data-target="#exampleModal">Accès privé</a></li>
+        <li><a href="" data-toggle="modal" data-target="#exampleModal">Accès privé</a></li>
         <!-- Fin button modal -->
       </ul>
       <!-- <ul>

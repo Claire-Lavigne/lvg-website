@@ -9630,7 +9630,7 @@ h1 {
   font-weight: bold;
   line-height: 1.5em;
   z-index: 20;
-  margin: 300px auto 20px; }
+  margin: 20px auto; }
 
 h2 {
   font-family: "Raleway", sans-serif;
@@ -10058,13 +10058,13 @@ h3 {
   position: relative;
   opacity: 1; }
   .nav-link:hover {
-    color: #000; }
+    color: black !important; }
   .nav-link::before {
     transition: 300ms;
     height: 2px;
     content: "";
     position: absolute;
-    background-color: #000;
+    background-color: black;
     width: 0%;
     bottom: 5px; }
   .nav-link:hover::before {
@@ -10286,25 +10286,31 @@ footer {
     display: flex;
     width: 100%;
     justify-content: center; }
-    .portfolio-images .row .photo {
-      background-size: cover;
-      background-position: center;
-      width: 100%;
-      cursor: pointer;
-      height: auto; }
-      @media (min-width: 768px) {
-        .portfolio-images .row .photo {
-          width: calc(100% / 2); } }
-      @media (min-width: 1025px) {
-        .portfolio-images .row .photo {
-          width: calc(100% / 3); } }
-      .portfolio-images .row .photo h2 {
-        margin: 190px 0;
-        color: white; }
-      .portfolio-images .row .photo:hover {
-        background-color: black;
-        opacity: 0.6;
-        transition: all 0.9s; }
+  .portfolio-images .photo {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: auto;
+    width: 100%;
+    overflow: hidden; }
+    @media (min-width: 768px) {
+      .portfolio-images .photo {
+        width: calc(100%/2); } }
+    @media (min-width: 1025px) {
+      .portfolio-images .photo {
+        width: calc(100%/3); } }
+    .portfolio-images .photo:hover .block {
+      opacity: 1; }
+  .portfolio-images .block {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    transition: all 0.4s ease-in-out 0s; }
+  .portfolio-images .text {
+    margin: 180px 0;
+    color: white;
+    display: inline-block; }
 
 .portfolio-category {
   background-color: black; }
@@ -10432,14 +10438,11 @@ footer {
   padding: 50px auto; }
   .pack-infos .row {
     display: flex;
-    flex-flow: row wrap; }
+    flex-flow: row wrap;
+    align-items: center; }
   .pack-infos .bg-color {
-    width: 100%;
     height: 200px;
     border: 1px solid black; }
-    @media (min-width: 1025px) {
-      .pack-infos .bg-color {
-        width: calc(100%/3); } }
     .pack-infos .bg-color:nth-child(2n+1) {
       background-color: black; }
     .pack-infos .bg-color:nth-child(2n+0) {
@@ -10451,7 +10454,7 @@ footer {
     .pack-infos .bg-color:hover {
       background-color: #181818;
       opacity: 0.9;
-      transition: all 0.9s; }
+      transition: all 0.5s; }
 
 
 /*# sourceMappingURL=style.css.map*/

@@ -1,8 +1,7 @@
 <?php get_header() ?>
   <header class="header header-slides header-zindex" id="one">
 <?php  get_template_part('template-parts/header/header', 'nav'); ?> 
-  <h1>Laurent Lavigne<br>Photographe professionnel</h1>
-</header>
+  </header>
 
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -58,7 +57,7 @@
           <img data-aos="fade-right" src="<?php echo get_template_directory_uri() . '/public/images/laurent.jpg' ?>" alt="">
         </div>
         <div data-aos="fade-left"  class="photographer__text">
-          <h2>Laurent Lavigne</h2>
+          <h1>Laurent Lavigne<br>Photographe professionnel</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Ipsa ad ipsam nostrum in unde laboriosam sint officiis accusantium 
             suscipit non, cum molestias 
