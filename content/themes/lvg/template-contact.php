@@ -44,17 +44,13 @@ Template Name: Contact
             </div>
         </section>
 
+        <!-- FORMULAIRE DE CONTACT -->
         <section>
             <h2 class="contact-title">Nous contacter</h2>
-            <!-- <form class="form-contact"> -->
-            <form class="form-contact" action="#">
-                <div class="form-informations">
                     <?php echo do_shortcode('[contact-form-7 id="24" title="Formulaire de contact"]'); ?>
-                </div>
-            </form>
-            <button class="button-primary" type="submit">Envoyer</button>
         </section>
-         
+         <!-- FIN FORMULAIRE DE CONTACT -->
+
         <section>
             <h2 class="contact-title">Nos partenaires</h2>
             <div class="partners">

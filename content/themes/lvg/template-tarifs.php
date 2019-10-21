@@ -226,6 +226,51 @@ Template Name: Tarifs
              </ul>
        </div>
 
+
+
+
+<!-- grid -->
+<div class="container pack-infos">
+    <div class="row">
+      <div class="col-md bg-color"> 
+        <p>Photos numériques en HD</p>
+      </div>
+      <div class="col-md bg-color"> 
+        <i class="fa fa-picture-o fa-3x"></i>
+      </div>
+      <div class="col-md bg-color"> 
+        <p>Photo en couleur et N&B</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md bg-color"> 
+        <i class="fa fa-car fa-3x"></i>
+      </div>
+      <div class="col-md bg-color"> 
+        <p>Déplacement inclus (Tarn)</p>
+      </div>
+      <div class="col-md bg-color"> 
+        <i class="fa fa-car fa-3x"></i>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md bg-color"> 
+        <p>Téléchargement gratuit</p>
+      </div>
+      <div class="col-md bg-color"> 
+        <i class="fa fa-hdd-o fa-3x"></i>
+      </div>
+      <div class="col-md bg-color"> 
+        <p>Sauvegarde sur Drive à vie</p>
+      </div>
+    </div> 
+</div>
+
+
+
+
+
+
 </main>
 
 

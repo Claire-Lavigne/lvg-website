@@ -76,14 +76,14 @@
     position: relative;
     opacity: 1;
     &:hover {
-        color: #000;
+        color: $black !important;
     }
     &::before {
         transition: 300ms;
         height: 2px;
         content: "";
         position: absolute;
-        background-color: #000;
+        background-color: $black;
         width: 0%;
         bottom: 5px;
     }

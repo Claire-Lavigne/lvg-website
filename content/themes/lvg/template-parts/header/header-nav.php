@@ -11,13 +11,18 @@
               'container_class' => '',
               'container' => '',
               // 'items_wrap'  => '<li><a class="nav-link nav-link-ltr" data-hover="%1$s" href="%2$s">%3$s</a></li>',
-              'items_wrap'  => '<li><a class="nav-link nav-link-ltr" href="%2$s">%3$s</a></li>',
+              'link_before' => '<div class="nav-link nav-link-ltr">',
+              'link_after' => '</div>',
+              'items_wrap' => '<a href="%2$s">%3$s</a>',
               'echo' => true
             ]);
             $menu = strip_tags($menu, '<nav></nav>');
 
             echo $menu;
           ?>
+          <!-- Button modal -->
+          <li><a class="nav-link nav-link-ltr" href="" data-toggle="modal" data-target="#exampleModal">Accès privé</a></li>
+          <!-- Fin button modal -->
       </ul>
     </nav>
     

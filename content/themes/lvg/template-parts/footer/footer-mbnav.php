@@ -9,6 +9,9 @@
         <li><a data-hover="Tarifs" href="prices.html">Tarifs</a></li>
         <li><a data-hover="Contact" href="contact.html">Contact</a></li>
         <li><a data-hover="FAQ" href="faq.html">FAQ</a></li>
+        <!-- Button modal -->
+        <li><a class="nav-link nav-link-ltr" href="" data-toggle="modal" data-target="#exampleModal">Accès privé</a></li>
+        <!-- Fin button modal -->
       </ul>
       <!-- <ul>
           <li><a class="underline" href="index.html">Home</a></li>

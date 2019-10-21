@@ -102,3 +102,34 @@
         }
     }   
 }
+
+
+.pack-infos{
+    padding: 50px auto;
+    .row {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    .bg-color{
+        height: 200px;
+        border: 1px solid $black;
+        &:nth-child(2n+1){
+            background-color: $black;
+        }
+        &:nth-child(2n+0){
+            background-color: $white;
+        }
+        p{
+            color: $white;
+        }
+        i {
+            color: black;
+        }
+        &:hover{
+            background-color: $dark-grey;
+            opacity: 0.9;
+            transition: all 0.5s;
+        }
+    }
+}

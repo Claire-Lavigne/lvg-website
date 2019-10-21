@@ -9740,6 +9740,37 @@ h3 {
   position: absolute;
   top: 0; }
 
+.contact-form {
+  margin: 90px auto; }
+  @media (min-width: 768px) {
+    .contact-form {
+      width: 80%; } }
+  @media (min-width: 1025px) {
+    .contact-form {
+      width: 65%; } }
+  @media (min-width: 1281px) {
+    .contact-form {
+      width: 45%; } }
+  .contact-form-informations {
+    width: 100%;
+    margin: 25px auto; }
+    .contact-form-informations textarea {
+      height: 200px; }
+  .contact-form input, .contact-form textarea {
+    width: 90%;
+    height: 10px;
+    padding: 20px;
+    margin: 15px auto;
+    border: solid #f8f8f8;
+    border-width: 0 0 3px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: black;
+    outline: none !important; }
+    .contact-form input:focus, .contact-form textarea:focus {
+      border-bottom: 3px solid black;
+      transition: all 0.5s ease-in-out; }
+
 .dot {
   display: none; }
   .dot a {
@@ -9811,43 +9842,6 @@ h3 {
     display: flex;
     width: 100%;
     color: inherit; }
-
-form {
-  margin: 90px auto; }
-  form p:nth-child(4) {
-    position: relative;
-    top: 20px; }
-  form .form-informations {
-    width: 100%;
-    margin: 25px auto; }
-    form .form-informations textarea {
-      height: 200px; }
-  form input, form textarea {
-    width: 90%;
-    height: 10px;
-    padding: 20px;
-    margin: 15px auto;
-    border: solid #f8f8f8;
-    border-width: 0 0 3px;
-    border-radius: 2px;
-    font-size: 14px;
-    color: black;
-    outline: none !important; }
-    form input:focus, form textarea:focus {
-      border-bottom: 3px solid black;
-      transition: all 0.5s ease-in-out; }
-
-@media (min-width: 768px) {
-  .form-contact {
-    width: 80%; } }
-
-@media (min-width: 1025px) {
-  .form-contact {
-    width: 65%; } }
-
-@media (min-width: 1281px) {
-  .form-contact {
-    width: 45%; } }
 
 .galery {
   display: flex;
@@ -9939,14 +9933,33 @@ form {
         max-height: 80vh; }
         .modal-body span {
           font-size: 1em; } }
-  .modal-form p, .modal-form input {
-    margin: 0 auto;
-    text-transform: uppercase; }
-    @media (min-width: 1025px) {
-      .modal-form p, .modal-form input {
-        font-size: 1.2em;
-        width: 300px;
-        margin: 20px auto; } }
+  .modal-form {
+    margin: 90px auto; }
+    .modal-form p, .modal-form input {
+      margin: 0 auto;
+      text-transform: uppercase; }
+      @media (min-width: 1025px) {
+        .modal-form p, .modal-form input {
+          font-size: 1.2em;
+          width: 300px;
+          margin: 20px auto; } }
+    .modal-form input {
+      width: 90%;
+      height: 10px;
+      padding: 20px;
+      margin: 15px auto;
+      border: solid #f8f8f8;
+      border-width: 0 0 3px;
+      border-radius: 2px;
+      font-size: 14px;
+      color: black;
+      outline: none !important; }
+      .modal-form input:focus {
+        border-bottom: 3px solid black;
+        transition: all 0.5s ease-in-out; }
+    .modal-form-informations {
+      width: 100%;
+      margin: 25px auto; }
   .modal-title {
     border: 2px solid black;
     border-radius: 3px;
@@ -10051,11 +10064,10 @@ form {
     height: 2px;
     content: "";
     position: absolute;
-    background-color: #000; }
-  .nav-link-ltr::before {
+    background-color: #000;
     width: 0%;
     bottom: 5px; }
-  .nav-link-ltr:hover::before {
+  .nav-link:hover::before {
     width: 100%; }
 
 footer {
@@ -10415,6 +10427,31 @@ footer {
         color: #960d69; }
     .packages__information li i {
       width: auto; }
+
+.pack-infos {
+  padding: 50px auto; }
+  .pack-infos .row {
+    display: flex;
+    flex-flow: row wrap; }
+  .pack-infos .bg-color {
+    width: 100%;
+    height: 200px;
+    border: 1px solid black; }
+    @media (min-width: 1025px) {
+      .pack-infos .bg-color {
+        width: calc(100%/3); } }
+    .pack-infos .bg-color:nth-child(2n+1) {
+      background-color: black; }
+    .pack-infos .bg-color:nth-child(2n+0) {
+      background-color: white; }
+    .pack-infos .bg-color p {
+      color: white; }
+    .pack-infos .bg-color i {
+      color: black; }
+    .pack-infos .bg-color:hover {
+      background-color: #181818;
+      opacity: 0.9;
+      transition: all 0.9s; }
 
 
 /*# sourceMappingURL=style.css.map*/
