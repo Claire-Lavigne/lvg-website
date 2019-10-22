@@ -10286,22 +10286,27 @@ footer {
     display: flex;
     width: 100%;
     justify-content: center; }
+  .portfolio-images .blockphoto {
+    overflow: hidden;
+    height: auto;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .portfolio-images .blockphoto {
+        width: calc(100%/2); } }
+    @media (min-width: 1025px) {
+      .portfolio-images .blockphoto {
+        width: calc(100%/3); } }
+    .portfolio-images .blockphoto:hover .photo {
+      transform: scale(1.2); }
   .portfolio-images .photo {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
-    height: auto;
-    width: 100%;
-    overflow: hidden; }
-    @media (min-width: 768px) {
-      .portfolio-images .photo {
-        width: calc(100%/2); } }
-    @media (min-width: 1025px) {
-      .portfolio-images .photo {
-        width: calc(100%/3); } }
+    transition: transform .5s ease; }
     .portfolio-images .photo:hover .block {
-      opacity: 1; }
+      opacity: 1;
+      transform: scale(1.1); }
   .portfolio-images .block {
     opacity: 0;
     background: rgba(0, 0, 0, 0.6);

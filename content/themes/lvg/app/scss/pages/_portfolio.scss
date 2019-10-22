@@ -22,27 +22,29 @@
         width: 100%;
         justify-content: center;
     }
-    .photo{
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        cursor: pointer;
+    .blockphoto {
+        overflow: hidden;
         height: auto;
         width: 100%;
-        overflow: hidden;
         @include tablets{
             width: calc(100%/2);
         }
         @include computers{
             width: calc(100%/3);
         }
-        // &:hover{
-        //     background-color: $black;
-        //     opacity: 0.6;
-        //     transition: all 0.9s;
-        // }
+        &:hover .photo {
+            transform: scale(1.2);
+        }   
+    }
+    .photo{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        transition: transform .5s ease;
         &:hover .block {
             opacity: 1;
+            transform: scale(1.1);
         }
     }
     .block {
