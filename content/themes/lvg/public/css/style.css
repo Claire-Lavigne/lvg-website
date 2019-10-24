@@ -10248,7 +10248,9 @@ footer {
 .sig-canvas {
   border: 2px dotted #CCCCCC;
   border-radius: 15px;
-  cursor: crosshair; }
+  cursor: crosshair;
+  margin: 0 auto;
+  height: 160px; }
 
 .mentions {
   color: #181818;

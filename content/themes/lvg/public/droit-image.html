@@ -68,50 +68,47 @@
                     <input type="checkbox" name="infos-ok-label3" id="infos-ok-label3"><label for="infos-ok-label3"><a href="https://www.instagram.com/lavignephotographe/" target="_blank">Instagram</a> professionnel</label><br>
                     <input type="checkbox" name="infos-ok-label4" id="infos-ok-label4"><label for="infos-ok-label4"><a href="https://www.facebook.com/lvgstudio/" target="_blank">Facebook</a> professionnel</label><br>
                     <input type="checkbox" name="infos-ok-label5" id="infos-ok-label5"><label for="infos-ok-label5">Plateformes partenaires (ex : <a href="https://www.mariages.net/photo-mariage/lvg-studio-laurent-lavigne-photographe--e115617" target="_blank">mariages.net</a>)</label>
-                </div>
-                <p>Le <strong>MODÈLE</strong>
-                a lu et compris toutes les implications de ce contrat de cession des droits à l’image et consent à
-                l’utilisation de la prise de vue des photographies mentionnées dans ce formulaire.</p>
-                
+                </div>           
             </div>
         </div>
 
-        <div class="droit__block"> 
+        <div class="droit__block">
             <div class="droit__block--small">
-                <p><div>Fait à <input type="text" name="city" value="" placeholder="Ville">
-                le <input type="date" name=""></div>
-                en deux exemplaires originaux et de bonne foi.
-                </p>
+                <p>Le <strong>MODÈLE</strong>
+                    a lu et compris toutes les implications de ce contrat de cession des droits à l’image et consent à
+                    l’utilisation de la prise de vue des photographies mentionnées dans ce formulaire.</p>
+  
+                
+            <div>
+                <p>Fait à <input type="text" name="city" value="" placeholder="Ville">
+                       le <input type="date" name=""><br>
+                       en deux exemplaires originaux et de bonne foi.</p></div>
+                
                 <div>
-                    <p>LE <strong>MODÈLE</strong></br>
-                    Lu et approuvé, fait à titre gracieux. Bon pour accord.</br>
-                    E-mail et signature du MODÈLE</p>
+                    <p>LE <strong>MODÈLE</strong><br>
+                    Lu et approuvé, fait à titre gracieux. Bon pour accord.</p>
+                    <p>E-mail et signature du MODÈLE</p>
                     <input type="email" name="email" value="" placeholder="Adresse e-mail">
                 </div>
-                    
+            </div>
+
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1>E-Signature</h1>
-                            <p>Sign in the canvas below and save your signature as an image!</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <canvas id="sig-canvas" class="sig-canvas" width="620" height="160">
-                                Get a better browser, bro.
+                            <canvas class="sig-canvas" width="320" height="160">
+                                Veuillez utilisez un autre navigateur.
                             </canvas>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
-                            <button class="button-primary" id="sig-submitBtn">Submit Signature</button>
-                            <button class="button-primary" id="sig-clearBtn">Clear Signature</button>
+                        <div class="col-md">
+                            <button class="button-primary" id="sig-submitBtn">Enregistrer</button>
+                            <button class="button-primary" id="sig-clearBtn">Annuler</button>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <img id="sig-image" src="" alt="Your signature will go here!"/>
+                            <img id="sig-image" src="" alt="Votre signature s'affichera ici !"/>
                         </div>
                     </div>
                 </div>
@@ -124,7 +121,147 @@
                     <button id="btn" type="submit" class="button--pink">Envoyer</button>
                 </div>
             </div>
-        </div>
+        <!-- </div> -->
     </main>
+
+
+
+
+    <script>
+            (function() {
+            window.requestAnimFrame = (function(callback) {
+                return window.requestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                window.mozRequestAnimationFrame ||
+                window.oRequestAnimationFrame ||
+                window.msRequestAnimaitonFrame ||
+                function(callback) {
+                    window.setTimeout(callback, 1000 / 60);
+                };
+            })();
+        
+            var canvas = document.getElementById("sig-canvas");
+            var ctx = canvas.getContext("2d");
+            ctx.strokeStyle = "#222222";
+            ctx.lineWidth = 4;
+        
+            var drawing = false;
+            var mousePos = {
+                x: 0,
+                y: 0
+            };
+            var lastPos = mousePos;
+        
+            canvas.addEventListener("mousedown", function(e) {
+                drawing = true;
+                lastPos = getMousePos(canvas, e);
+            }, false);
+        
+            canvas.addEventListener("mouseup", function(e) {
+                drawing = false;
+            }, false);
+        
+            canvas.addEventListener("mousemove", function(e) {
+                mousePos = getMousePos(canvas, e);
+            }, false);
+        
+            // Add touch event support for mobile
+            canvas.addEventListener("touchstart", function(e) {
+        
+            }, false);
+        
+            canvas.addEventListener("touchmove", function(e) {
+                var touch = e.touches[0];
+                var me = new MouseEvent("mousemove", {
+                clientX: touch.clientX,
+                clientY: touch.clientY
+                });
+                canvas.dispatchEvent(me);
+            }, false);
+        
+            canvas.addEventListener("touchstart", function(e) {
+                mousePos = getTouchPos(canvas, e);
+                var touch = e.touches[0];
+                var me = new MouseEvent("mousedown", {
+                clientX: touch.clientX,
+                clientY: touch.clientY
+                });
+                canvas.dispatchEvent(me);
+            }, false);
+        
+            canvas.addEventListener("touchend", function(e) {
+                var me = new MouseEvent("mouseup", {});
+                canvas.dispatchEvent(me);
+            }, false);
+        
+            function getMousePos(canvasDom, mouseEvent) {
+                var rect = canvasDom.getBoundingClientRect();
+                return {
+                x: mouseEvent.clientX - rect.left,
+                y: mouseEvent.clientY - rect.top
+                }
+            }
+        
+            function getTouchPos(canvasDom, touchEvent) {
+                var rect = canvasDom.getBoundingClientRect();
+                return {
+                x: touchEvent.touches[0].clientX - rect.left,
+                y: touchEvent.touches[0].clientY - rect.top
+                }
+            }
+        
+            function renderCanvas() {
+                if (drawing) {
+                ctx.moveTo(lastPos.x, lastPos.y);
+                ctx.lineTo(mousePos.x, mousePos.y);
+                ctx.stroke();
+                lastPos = mousePos;
+                }
+            }
+        
+            // Prevent scrolling when touching the canvas
+            document.body.addEventListener("touchstart", function(e) {
+                if (e.target == canvas) {
+                e.preventDefault();
+                }
+            }, false);
+            document.body.addEventListener("touchend", function(e) {
+                if (e.target == canvas) {
+                e.preventDefault();
+                }
+            }, false);
+            document.body.addEventListener("touchmove", function(e) {
+                if (e.target == canvas) {
+                e.preventDefault();
+                }
+            }, false);
+        
+            (function drawLoop() {
+                requestAnimFrame(drawLoop);
+                renderCanvas();
+            })();
+        
+            function clearCanvas() {
+                canvas.width = canvas.width;
+            }
+        
+            // Set up the UI
+            // var sigText = document.getElementById("sig-dataUrl");
+            var sigImage = document.getElementById("sig-image");
+            var clearBtn = document.getElementById("sig-clearBtn");
+            var submitBtn = document.getElementById("sig-submitBtn");
+            clearBtn.addEventListener("click", function(e) {
+                clearCanvas();
+                // sigText.innerHTML = "Data URL for your signature will go here!";
+                sigImage.setAttribute("src", "");
+            }, false);
+            submitBtn.addEventListener("click", function(e) {
+                var dataUrl = canvas.toDataURL();
+                // sigText.innerHTML = dataUrl;
+                sigImage.setAttribute("src", dataUrl);
+            }, false);
+        
+            })();
+        </script>
  </body>
  </html>
