@@ -107,15 +107,16 @@
             width: 50%;
         }
     }
-    .button--small {
-        display: inline-block;
-        width: 100px;
-    }
     &--image{
         width: 130px;
         height: auto;
     }
+}
 
-    
 
+
+.sig-canvas {
+    border: 2px dotted #CCCCCC;
+    border-radius: 15px;
+    cursor: crosshair;
 }

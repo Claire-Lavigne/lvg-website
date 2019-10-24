@@ -216,59 +216,47 @@ Template Name: Tarifs
 
         <div class="packages__information">
             <h2>Informations mariage</h2>
-              <p class="packages__informations--text">* Période : Janvier à Mai + Octobre à Décembre inclus</p>
-                <ul>
-                    <li><i class="fa fa-camera fa-3x"></i><p>Photos numériques en HD</p></li>
-                    <li><i class="fa fa-picture-o fa-3x"></i><p>Photo en couleur et N&B</p></li>
-                    <li><i class="fa fa-car fa-3x"></i><p>Déplacement inclus (Tarn)</p></li>
-                    <li><i class="fa fa-download fa-3x"></i><p>Téléchargement gratuit</p></li>
-                    <li><i class="fa fa-hdd-o fa-3x"></i><p>Sauvegarde photo <br>sur votre Drive à vie</p></li>
-             </ul>
+            <p class="packages__informations--text">* Période : Janvier à Mai + Octobre à Décembre inclus</p>
+            
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="card-infos col-md">
+                        <div class="card-infos-block">
+                            <div class="card-infos-icon">
+                                <img src="https://img.icons8.com/ios/50/960D69/picture.png">
+                            </div>
+                            <div class="card-infos-text">
+                                <p>Photos numériques en HD (couleur et N&B)</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="card-infos col-md">
+                        <div class="card-infos-block">
+                            <div class="card-infos-icon">
+                                <img src="https://img.icons8.com/ios/50/960D69/car.png">
+                            </div>
+                            <div class="card-infos-text">
+                                <p>Déplacement inclus (Tarn)</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="card-infos col-md">
+                        <div class="card-infos-block">
+                            <div class="card-infos-icon">
+                                <img src="https://img.icons8.com/ios/50/960D69/download-2.png">
+                            </div>
+                            <div class="card-infos-text">
+                                <p>Téléchargements gratuit &<br>
+                                Sauvegarde sur Drive à vie</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
        </div>
-
-
-
-
-<!-- grid -->
-<div class="container pack-infos">
-    <div class="row">
-      <div class="col-md bg-color"> 
-        <p>Photos numériques en HD</p>
-      </div>
-      <div class="col-md bg-color"> 
-        <i class="fa fa-picture-o fa-3x"></i>
-      </div>
-      <div class="col-md bg-color"> 
-        <p>Photo en couleur et N&B</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md bg-color"> 
-        <i class="fa fa-car fa-3x"></i>
-      </div>
-      <div class="col-md bg-color"> 
-        <p>Déplacement inclus (Tarn)</p>
-      </div>
-      <div class="col-md bg-color"> 
-        <i class="fa fa-car fa-3x"></i>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md bg-color"> 
-        <p>Téléchargement gratuit</p>
-      </div>
-      <div class="col-md bg-color"> 
-        <i class="fa fa-hdd-o fa-3x"></i>
-      </div>
-      <div class="col-md bg-color"> 
-        <p>Sauvegarde sur Drive à vie</p>
-      </div>
-    </div> 
-</div>
-
-
-
-
 
 
 </main>

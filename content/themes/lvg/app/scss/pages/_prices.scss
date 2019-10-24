@@ -7,16 +7,14 @@
             height: 90vh;
         }
         @include large-screens {
-            height: 100vh;
-             
+            height: 100vh; 
         }
-        
 }
+
 .prices-preview {
     //background-color: $dark-grey;  
     @include flexbox;
     margin: 0px 0 25px;
-   
     @include large-screens {
         width: 95%;
         margin: auto;        
@@ -38,7 +36,6 @@
         }
         @include large-screens {
             margin: 0;
-            
         }
     }
     &__title {
@@ -63,7 +60,6 @@
     }
 }
 
-
 .packages__information {
     padding: 20px 0 60px;
     color: $black;
@@ -71,67 +67,37 @@
         padding-top: 45px;
         font-size: 1.2em;
     }
-    ul {
-        width: 100%;
-        // @include flexbox;
-    }
-    li {
-        margin: 10px;
-        display: flex;
-        justify-content: center;
-        width: auto;
-        @include tablets {
-            width: 40%;
-            margin: auto;
-        }
-        p {
-            padding: 10px;
-            font-size: 1.2em;
-            font-weight: bold;
-            text-transform: initial;
-        }
-        i, p {
-            color: $black;
-            margin: 10px;
-            &:hover {
-                color: $pink;
-            }
-        }
-        i {
-            width: auto;
-        }
-    }   
 }
 
-
-
-.flip-card {
+.card-infos {
     margin: 50px auto;
     width: 300px;
     height: auto;
-    &-inner {
-        height: 500px;
-        text-align: center;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    &-block {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
     }
-    &-front {
-        width: 50%;
-        height: 20%;
-    }
-    &-back {
-        width: 100%;
-        height: 50%;
-    }
-    &-front {
+    &-icon {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-color: $black;
-        color: $white;
         border-radius: 50%;
+        border: 10px solid $pink;
     }
-    .fa-5x {
-        color: $white;
-    }
-    p {
-        font-size: 2em;
+    &-text {
+        width: 300px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5em;
         padding: 1em;
     }
 }
