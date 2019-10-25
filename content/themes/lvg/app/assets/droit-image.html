@@ -28,19 +28,48 @@
                 </ul>
             </div>
             <div class="droit__block--small">
-                <p>Dénommé(e) ci-après le « <strong>MODÈLE</strong> »</br>
-                    (et Représentant légal si mineur)</p>
-                <div>
-                    <input type="radio" name="gender" id="genderMme" value="madame"><label for="genderMme">Mme</label> 
-                    <input type="radio" name="gender" id="genderM" value="monsieur"><label for="genderM">M.</label>
-                    <input class="contact-form__item form-group field-input" type="text" name="lastname" value="" placeholder="Nom" for="field-Name">
-                    <input class="contact-form__item form-group field-input" type="text" name="firstname" value="" placeholder="Prénom" for="field-Surname">
-                    <input class="contact-form__item form-group field-input" type="date" name="datebirth" value="">
-                    <br>
-                    <input type="radio" name="gender" id="genderMme" value="madame"><label for="genderMme">Mme</label> 
-                    <input type="radio" name="gender" id="genderM" value="monsieur"><label for="genderM">M.</label>
-                    <input class="contact-form__item form-group field-input" type="text" name="lastname" value="" placeholder="Nom (représentant)" for="field-Name">
-                    <input class="contact-form__item form-group field-input " type="text" name="firstname" value="" placeholder="Prénom (représentant)" for="field-Surname">
+                <p>Dénommé(e) ci-après le « <strong>MODÈLE</strong> »</p>
+                <div class="row modeles">
+                    <div>
+                        <button class="add_modeleone"> AJOUTER UN MODÈLE (majeur) </button>
+                        <button class="add_modeletwo"> AJOUTER UN MODÈLE (mineur) </button>
+                    </div>
+                </div>
+                <div class="row modele_majeur">
+                    <div>
+                        <strong>MODÈLE</strong>
+                        <input type="radio" name="gender" value="madame"><label for="genderMme">Mme</label> 
+                        <input type="radio" name="gender" value="monsieur"><label for="genderM">Mr</label>
+                        <input type="text" name="lastname" value="" placeholder="Nom" for="field-Name">
+                        <input type="text" name="firstname" value="" placeholder="Prénom" for="field-Surname">
+                        <input type="date" name="datebirth" value="">
+                        <span>
+                            <button class="add_client"> + </button>
+                            <button class="remove_client"> - </button>
+                        </span>
+                </div>
+                </div>
+                <div class="row modele_mineur">
+                    <div>
+                        <strong>MODÈLE (MINEUR)</strong>
+                        <input type="radio" name="gender" value="madame"><label for="genderMme">Mme</label> 
+                        <input type="radio" name="gender" value="monsieur"><label for="genderM">Mr</label>
+                        <input type="text" name="lastname" value="" placeholder="Nom" for="field-Name">
+                        <input type="text" name="firstname" value="" placeholder="Prénom" for="field-Surname">
+                        <input type="date" name="datebirth" value="">
+                    </div>
+                    <div>
+                        <strong>REPRÉSENTANT LÉGAL DU MODÈLE</strong>
+                        <input type="radio" name="gender" value="madame"><label for="genderMme">Mme</label> 
+                        <input type="radio" name="gender" value="monsieur"><label for="genderM">Mr</label>
+                        <input type="text" name="lastname" value="" placeholder="Nom" for="field-Name">
+                        <input type="text" name="firstname" value="" placeholder="Prénom" for="field-Surname">
+                        <input type="date" name="datebirth" value="">
+                        <span>
+                            <button class="add_client"> + </button>
+                            <button class="remove_client"> - </button>
+                        </span>
+                    </div>
                 </div>
             </div>
             <div class="droit__block--small">

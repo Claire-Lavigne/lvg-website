@@ -30,17 +30,32 @@
             <div class="droit__block--small">
                 <p>Dénommé(e) ci-après le « <strong>MODÈLE</strong> »</br>
                     (et Représentant légal si mineur)</p>
-                <div>
-                    <input type="radio" name="gender" id="genderMme" value="madame"><label for="genderMme">Mme</label> 
-                    <input type="radio" name="gender" id="genderM" value="monsieur"><label for="genderM">M.</label>
-                    <input class="contact-form__item form-group field-input" type="text" name="lastname" value="" placeholder="Nom" for="field-Name">
-                    <input class="contact-form__item form-group field-input" type="text" name="firstname" value="" placeholder="Prénom" for="field-Surname">
-                    <input class="contact-form__item form-group field-input" type="date" name="datebirth" value="">
-                    <br>
-                    <input type="radio" name="gender" id="genderMme" value="madame"><label for="genderMme">Mme</label> 
-                    <input type="radio" name="gender" id="genderM" value="monsieur"><label for="genderM">M.</label>
-                    <input class="contact-form__item form-group field-input" type="text" name="lastname" value="" placeholder="Nom (représentant)" for="field-Name">
-                    <input class="contact-form__item form-group field-input " type="text" name="firstname" value="" placeholder="Prénom (représentant)" for="field-Surname">
+
+                <div class="row">
+                    <div class="modele_infos">
+                        <strong>MODÈLE</strong>
+                        <input type="radio" name="gender" value="madame"><label for="genderMme">Mme</label> 
+                        <input type="radio" name="gender" value="monsieur"><label for="genderM">Mr</label>
+                        <input type="text" name="lastname" value="" placeholder="Nom" for="field-Name">
+                        <input type="text" name="firstname" value="" placeholder="Prénom" for="field-Surname">
+                        <input type="date" name="datebirth" value="">
+                    </div>
+                    <div class="representant_infos">
+                        <strong>REPRÉSENTANT LÉGAL DU MODÈLE</strong>
+                        <input type="radio" name="gender" value="madame"><label for="genderMme">Mme</label> 
+                        <input type="radio" name="gender" value="monsieur"><label for="genderM">Mr</label>
+                        <input type="text" name="lastname" value="" placeholder="Nom" for="field-Name">
+                        <input type="text" name="firstname" value="" placeholder="Prénom" for="field-Surname">
+                        <input type="date" name="datebirth" value="">
+                    </div>
+                    <div>
+                        <button class="add-representant">Ajouter un représentant légal</button>
+                        <button class="remove-representant">Enlever un représentant légal</button>
+                        <button class="add-modele">Ajouter un modèle</button>
+                        <button class="remove-modele">Enlever un modèle</button>
+                    </div>
+                    <div class="modele_infos_extra"></div>
+                    <div class="representant_infos_extra"></div>
                 </div>
             </div>
             <div class="droit__block--small">
@@ -76,192 +91,54 @@
             <div class="droit__block--small">
                 <p>Le <strong>MODÈLE</strong>
                     a lu et compris toutes les implications de ce contrat de cession des droits à l’image et consent à
-                    l’utilisation de la prise de vue des photographies mentionnées dans ce formulaire.</p>
-  
-                
+                    l’utilisation de la prise de vue des photographies mentionnées dans ce formulaire.
+                </p> 
             <div>
                 <p>Fait à <input type="text" name="city" value="" placeholder="Ville">
                        le <input type="date" name=""><br>
-                       en deux exemplaires originaux et de bonne foi.</p></div>
-                
-                <div>
-                    <p>LE <strong>MODÈLE</strong><br>
-                    Lu et approuvé, fait à titre gracieux. Bon pour accord.</p>
-                    <p>E-mail et signature du MODÈLE</p>
-                    <input type="email" name="email" value="" placeholder="Adresse e-mail">
-                </div>
+                       en deux exemplaires originaux et de bonne foi.
+                </p>
             </div>
+            <div>
+                <p>LE <strong>MODÈLE</strong><br>
+                Lu et approuvé, fait à titre gracieux. Bon pour accord.</p>
+                <p>E-mail et signature du MODÈLE</p>
+                <input type="email" name="email" value="" placeholder="Adresse e-mail">
+            </div>
+        </div>
 
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <canvas class="sig-canvas" width="320" height="160">
-                                Veuillez utilisez un autre navigateur.
-                            </canvas>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md">
-                            <button class="button-primary" id="sig-submitBtn">Enregistrer</button>
-                            <button class="button-primary" id="sig-clearBtn">Annuler</button>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <img id="sig-image" src="" alt="Votre signature s'affichera ici !"/>
-                        </div>
-                    </div>
-                </div>
-                    
-                
-                <div>
-                    <p>LE <strong>PHOTOGRAPHE</strong></br>
-                    Lu et approuvé. Bon pour accord.</p>
-                    <img class="droit--image" src="/images/droit-image/signature.png" alt="">
-                    <button id="btn" type="submit" class="button--pink">Envoyer</button>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <canvas class="sig-canvas" width="320" height="160">
+                        Veuillez utilisez un autre navigateur.
+                    </canvas>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md">
+                    <button class="button-primary" id="sig-submitBtn">Enregistrer</button>
+                    <button class="button-primary" id="sig-clearBtn">Annuler</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img id="sig-image" src="" alt="Votre signature s'affichera ici !"/>
+                </div>
+            </div>
+        </div>
+            
+        
+        <div>
+            <p>LE <strong>PHOTOGRAPHE</strong></br>
+            Lu et approuvé. Bon pour accord.</p>
+            <img class="droit--image" src="/images/droit-image/signature.png" alt="">
+            <button id="btn" type="submit" class="button-primary">Envoyer</button>
+        </div>
+    </div>
         <!-- </div> -->
     </main>
 
 
-
-
-    <script>
-            (function() {
-            window.requestAnimFrame = (function(callback) {
-                return window.requestAnimationFrame ||
-                window.webkitRequestAnimationFrame ||
-                window.mozRequestAnimationFrame ||
-                window.oRequestAnimationFrame ||
-                window.msRequestAnimaitonFrame ||
-                function(callback) {
-                    window.setTimeout(callback, 1000 / 60);
-                };
-            })();
-        
-            var canvas = document.getElementById("sig-canvas");
-            var ctx = canvas.getContext("2d");
-            ctx.strokeStyle = "#222222";
-            ctx.lineWidth = 4;
-        
-            var drawing = false;
-            var mousePos = {
-                x: 0,
-                y: 0
-            };
-            var lastPos = mousePos;
-        
-            canvas.addEventListener("mousedown", function(e) {
-                drawing = true;
-                lastPos = getMousePos(canvas, e);
-            }, false);
-        
-            canvas.addEventListener("mouseup", function(e) {
-                drawing = false;
-            }, false);
-        
-            canvas.addEventListener("mousemove", function(e) {
-                mousePos = getMousePos(canvas, e);
-            }, false);
-        
-            // Add touch event support for mobile
-            canvas.addEventListener("touchstart", function(e) {
-        
-            }, false);
-        
-            canvas.addEventListener("touchmove", function(e) {
-                var touch = e.touches[0];
-                var me = new MouseEvent("mousemove", {
-                clientX: touch.clientX,
-                clientY: touch.clientY
-                });
-                canvas.dispatchEvent(me);
-            }, false);
-        
-            canvas.addEventListener("touchstart", function(e) {
-                mousePos = getTouchPos(canvas, e);
-                var touch = e.touches[0];
-                var me = new MouseEvent("mousedown", {
-                clientX: touch.clientX,
-                clientY: touch.clientY
-                });
-                canvas.dispatchEvent(me);
-            }, false);
-        
-            canvas.addEventListener("touchend", function(e) {
-                var me = new MouseEvent("mouseup", {});
-                canvas.dispatchEvent(me);
-            }, false);
-        
-            function getMousePos(canvasDom, mouseEvent) {
-                var rect = canvasDom.getBoundingClientRect();
-                return {
-                x: mouseEvent.clientX - rect.left,
-                y: mouseEvent.clientY - rect.top
-                }
-            }
-        
-            function getTouchPos(canvasDom, touchEvent) {
-                var rect = canvasDom.getBoundingClientRect();
-                return {
-                x: touchEvent.touches[0].clientX - rect.left,
-                y: touchEvent.touches[0].clientY - rect.top
-                }
-            }
-        
-            function renderCanvas() {
-                if (drawing) {
-                ctx.moveTo(lastPos.x, lastPos.y);
-                ctx.lineTo(mousePos.x, mousePos.y);
-                ctx.stroke();
-                lastPos = mousePos;
-                }
-            }
-        
-            // Prevent scrolling when touching the canvas
-            document.body.addEventListener("touchstart", function(e) {
-                if (e.target == canvas) {
-                e.preventDefault();
-                }
-            }, false);
-            document.body.addEventListener("touchend", function(e) {
-                if (e.target == canvas) {
-                e.preventDefault();
-                }
-            }, false);
-            document.body.addEventListener("touchmove", function(e) {
-                if (e.target == canvas) {
-                e.preventDefault();
-                }
-            }, false);
-        
-            (function drawLoop() {
-                requestAnimFrame(drawLoop);
-                renderCanvas();
-            })();
-        
-            function clearCanvas() {
-                canvas.width = canvas.width;
-            }
-        
-            // Set up the UI
-            // var sigText = document.getElementById("sig-dataUrl");
-            var sigImage = document.getElementById("sig-image");
-            var clearBtn = document.getElementById("sig-clearBtn");
-            var submitBtn = document.getElementById("sig-submitBtn");
-            clearBtn.addEventListener("click", function(e) {
-                clearCanvas();
-                // sigText.innerHTML = "Data URL for your signature will go here!";
-                sigImage.setAttribute("src", "");
-            }, false);
-            submitBtn.addEventListener("click", function(e) {
-                var dataUrl = canvas.toDataURL();
-                // sigText.innerHTML = dataUrl;
-                sigImage.setAttribute("src", dataUrl);
-            }, false);
-        
-            })();
-        </script>
- </body>
+   </body>
  </html>
