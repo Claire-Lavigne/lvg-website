@@ -47,11 +47,7 @@ Template Name: Contact
         <!-- FORMULAIRE DE CONTACT -->
         <section>
             <h2 class="contact-title">Nous contacter</h2>
-                <div class="contact-form">
-                    <div class="contact-form-informations">
-                        <?php echo do_shortcode('[contact-form-7 id="36" title="Formulaire de contact"]'); ?>
-                    </div>
-                </div>
+                <?php echo do_shortcode('[contact-form-7 id="36" title="Formulaire de contact"]'); ?>
         </section>
          <!-- FIN FORMULAIRE DE CONTACT -->
 
