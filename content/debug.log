@@ -1,8 +1,0 @@
-[17-Aug-2019 20:07:02 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ']' in /var/www/html/lvg-website/content/themes/lvg/template-parts/header/header-nav.php on line 27
-[17-Aug-2019 20:07:03 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ']' in /var/www/html/lvg-website/content/themes/lvg/template-parts/header/header-nav.php on line 27
-[15-Oct-2019 13:44:42 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1698): Access denied for user 'root'@'localhost' in /var/www/html/Wordpress/lvg-website2/wp/wp-includes/wp-db.php on line 1612
-[15-Oct-2019 13:44:53 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'admin'@'localhost' (using password: YES) in /var/www/html/Wordpress/lvg-website2/wp/wp-includes/wp-db.php on line 1612
-[15-Oct-2019 13:44:54 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'admin'@'localhost' (using password: YES) in /var/www/html/Wordpress/lvg-website2/wp/wp-includes/wp-db.php on line 1612
-[18-Oct-2019 07:32:16 UTC] PHP Warning:  sprintf(): Too few arguments in /var/www/html/Wordpress/lvg-website/wp/wp-includes/nav-menu-template.php on line 261
-[18-Oct-2019 11:35:49 UTC] PHP Warning:  sprintf(): Argument number must be greater than zero in /var/www/html/Wordpress/lvg-website/wp/wp-includes/nav-menu-template.php on line 261
-[18-Oct-2019 11:36:27 UTC] PHP Warning:  sprintf(): Too few arguments in /var/www/html/Wordpress/lvg-website/wp/wp-includes/nav-menu-template.php on line 261
