@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "be49044964879c9e9c90";
+/******/ 	var hotCurrentHash = "f6711b4b693fe31ad5d6";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -819,6 +819,8 @@ var app = {
   init: function() {
     console.log('init');
 
+
+
 // ===== footer copyright==== 
 let now = new Date();
 let year = now.getFullYear();
@@ -890,11 +892,19 @@ $('#button-scroll').click(function() {
   
 };
 
+
+ 
+
 $(app.init);
 
  AOS.init();
  
  
+
+ 
+
+
+
  
 
   

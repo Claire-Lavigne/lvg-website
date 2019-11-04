@@ -8,6 +8,8 @@ var app = {
   init: function() {
     console.log('init');
 
+
+
 // ===== footer copyright==== 
 let now = new Date();
 let year = now.getFullYear();
@@ -79,11 +81,19 @@ $('#button-scroll').click(function() {
   
 };
 
+
+ 
+
 $(app.init);
 
  AOS.init();
  
  
+
+ 
+
+
+
  
 
   

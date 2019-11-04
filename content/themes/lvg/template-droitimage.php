@@ -5,16 +5,14 @@ Template Name: Droitimage
 ?>
 <?php get_header() ?>
     <main class="droit"> 
-        <h1>Autorisation d'utilisation d'image
-            <br>(Reproduction et Représentation)</h1>
+        <h1>Autorisation d'utilisation d'image<br>
+        (Reproduction et Représentation)</h1>
         
-        <h2>Contrat de cession des droits à l'image</h2>
-            
         <div class="droit__block">
-            <h3>CESSION DES DROITS</h3>
-            <h3>ENTRE : LE <strong>PHOTOGRAPHE</strong></h3>
-                
+            <h2>Contrat de cession des droits à l'image</br>
+            ENTRE LE <strong>PHOTOGRAPHE</strong> ET LE <strong>MODÈLE</strong></h2>  
             <div class="droit__block--small">
+                <p>Dénommé ci-après le « <strong>PHOTOGRAPHE</strong> »</p>
                 <ul>
                     <li>Nom et Prénom : Lavigne Laurent</li>
                     <li>Né : le 31/01/1990 à Albi</li>
@@ -23,13 +21,10 @@ Template Name: Droitimage
                     <li>SIRET : 7420Z Activités photographiques</li>
                     <li>E-Mail : lavignephotographe@gmail.com</li>
                     <li>Téléphone : 06.81.02.17.89</li>
-                    <li>Dénommé ci-après le « <strong>PHOTOGRAPHE</strong> »</li>
                 </ul>
             </div>
-
-            <h3>ET : LE <strong>MODÈLE</strong></h3>
-                
             <div class="droit__block--small">
+                <p>Dénommé(e) ci-après le « <strong>MODÈLE</strong> »</p>
                 <p>
                     <input type="radio" name="gender" id="genderMme" value="madame"><label for="genderMme">Mme</label> 
                     <input type="radio" name="gender" id="genderM" value="monsieur"><label for="genderM">M.</label>
@@ -37,20 +32,17 @@ Template Name: Droitimage
                     <input class="contact-form__item form-group field-input" type="text" name="firstname" value="" placeholder="Prénom" for="field-Surname">
                     <input class="contact-form__item form-group field-input" type="date" name="datebirth" value="" >
                 </p>
-                <p><strong>REPRÉSENTANT LÉGAL</strong> (SI MINEUR)</p>
+                <p><strong>REPRÉSENTANT LÉGAL DU MODÈLE</strong> (SI MINEUR)</p>
                 <p>
                     <input type="radio" name="gender" id="genderMme" value="madame"><label for="genderMme">Mme</label> 
                     <input type="radio" name="gender" id="genderM" value="monsieur"><label for="genderM">M.</label>
                     <input class="contact-form__item form-group field-input" type="text" name="lastname" value="" placeholder="Nom" for="field-Name">
                     <input class="contact-form__item form-group field-input " type="text" name="firstname" value="" placeholder="Prénom" for="field-Surname">
+                    <input class="contact-form__item form-group field-input" type="date" name="datebirth" value="" >
                 </p>
-                <p>Dénommé(e) ci-après le « <strong>MODÈLE</strong> »</p>
             </div>
-        </div>
-        
-        <div class="droit__block">
             <div class="droit__block--small">
-                <p class="text-justify">Le <strong>MODÈLE</strong> 
+                <p>Le <strong>MODÈLE</strong> 
                 autorise des prises de vues photographiques et vidéo le mettant en scène et cède par le présent contrat, à titre gracieux
                 et non exclusif, tous les droits qu’il détient pour sa prestation et son image reproduite sur les photographies réalisées et accorde 
                 la permission irrévocable au <strong>PHOTOGRAPHE</strong>, à le photographier.
@@ -59,55 +51,79 @@ Template Name: Droitimage
         </div>
         
             
-        <h2>IDENTIFICATION DES PHOTOGRAPHIES DE LA PRISE DE VUE</h2>
         <div class="droit__block">
+            <h2>IDENTIFICATION DES PHOTOGRAPHIES DE LA PRISE DE VUE</h2>
             <div class="droit__block--small">
-                <p>Supports remis au <strong>MODÈLE</strong> par le <strong>PHOTOGRAPHE</strong> :
-                    <br>Photos numériques</p>
-                <p class="text-justify">Tous les modes de diffusions ci-dessous sont dans le seul but démonstratif afin de promouvoir le travail du photographe 
-                    <strong>« Laurent Lavigne »</strong>, aucune photo ne sera proposée à la vente de quelque manière que ce soit.</p>
-                <p>Cochez les autorisations de diffusion pour votre droit à l’image que vous accordez à <strong>« Laurent Lavigne »</strong> :</p>
-                <ul>
-                    <li><input type="checkbox" name="infos-ok" id="infos-ok-label"><label for="infos-ok-label">Tirages, Albums, Livres, Book, liste non exhaustive (Impressions sur papiers photo) </label></li>
-                    <li><input type="checkbox" name="infos-ok" id="infos-ok-label"><label for="infos-ok-label"> Sites Internet du photographe, notamment le site  www.lvgstudio.com </label></li>
-                    <li><input type="checkbox" name="infos-ok" id="infos-ok-label"><label for="infos-ok-label">Instagram du photographe</label></li>
-                    <li><input type="checkbox" name="infos-ok" id="infos-ok-label"><label for="infos-ok-label">Pages Facebook du photographe</label></li>
-                    <li><input type="checkbox" name="infos-ok" id="infos-ok-label"><label for="infos-ok-label"> Plateformes partenaires (mariages.net...) </label></li>
-                    <li><input type="checkbox" name="infos-ok" id="infos-ok-label"><label for="infos-ok-label">Projections, expositions et concours</label></li>
-                </ul>
+                <p>Supports remis au <strong>MODÈLE</strong> par le <strong>PHOTOGRAPHE</strong> :</p>
+                <p><strong>Photos numériques</strong></p>
+                <p>Tous les modes de diffusions ci-dessous sont dans le seul but démonstratif afin de promouvoir le travail du 
+                    <strong>PHOTOGRAPHE</strong>,
+                    aucune photo ne sera proposée à la vente de quelque manière que ce soit.</p>
+                <p>Cochez les autorisations de diffusion pour votre droit à l’image que vous accordez au <strong>PHOTOGRAPHE</strong> :</p>
+                <div class="checkbox">
+                    <input type="checkbox" name="infos-ok-label1" id="infos-ok-label1"><label for="infos-ok-label1">Tirages, Albums, Livres, Book et autre Impressions sur papiers photo</label><br>
+                    <input type="checkbox" name="infos-ok-label6" id="infos-ok-label6"><label for="infos-ok-label6">Projections, expositions et concours</label><br>
+                    <input type="checkbox" name="infos-ok-label2" id="infos-ok-label2"><label for="infos-ok-label2"><a href="index.html" target="_blank">LVGstudio</a> </label><br>
+                    <input type="checkbox" name="infos-ok-label3" id="infos-ok-label3"><label for="infos-ok-label3"><a href="https://www.instagram.com/lavignephotographe/" target="_blank">Instagram</a> professionnel</label><br>
+                    <input type="checkbox" name="infos-ok-label4" id="infos-ok-label4"><label for="infos-ok-label4"><a href="https://www.facebook.com/lvgstudio/" target="_blank">Facebook</a> professionnel</label><br>
+                    <input type="checkbox" name="infos-ok-label5" id="infos-ok-label5"><label for="infos-ok-label5">Plateformes partenaires (ex : <a href="https://www.mariages.net/photo-mariage/lvg-studio-laurent-lavigne-photographe--e115617" target="_blank">mariages.net</a>)</label>
+                </div>           
             </div>
         </div>
 
-        <div class="droit__block"> 
+        <div class="droit__block">
             <div class="droit__block--small">
-                <p class="text-justify">Le <strong>MODÈLE</strong>
-                a lu et compris toutes les implications de ce contrat de cession des droits à l’image et consent à
-                l’utilisation de la prise de vue des photographies mentionnées dans ce formulaire.</p>
-                <p>Fait à <input type="text" name="city" value="" placeholder="Ville"> 
-                    le <input type="date" name="">
-                    <br>en deux exemplaires originaux et de bonne foi.</p>
-                <p>LE <strong>MODÈLE</strong>
-                    <br>Lu et approuvé, fait à titre gracieux. Bon pour accord.</p>
+                <p>Le <strong>MODÈLE</strong>
+                    a lu et compris toutes les implications de ce contrat de cession des droits à l’image et consent à
+                    l’utilisation de la prise de vue des photographies mentionnées dans ce formulaire.
+                </p> 
+            <div>
+                <p>Fait à <input type="text" name="city" value="" placeholder="Ville">
+                       le <input type="date" name=""><br>
+                       en deux exemplaires originaux et de bonne foi.
+                </p>
+            </div>
+            <div>
+                <p>LE <strong>MODÈLE</strong><br>
+                Lu et approuvé, fait à titre gracieux. Bon pour accord.</p>
                 <p>E-mail et signature du MODÈLE</p>
-                    <input type="email" name="email" value="" placeholder="Adresse e-mail">
-                    <div class="signature-component">
-                        <canvas class="signature-pad"></canvas>
-                        <div>
-                            <button class="button--pink button--small" id="save">Save</button>
-                            <button class="button--pink button--small" id="clear">Clear</button>
-                        </div>
-                    </div>
+                <input type="email" name="email" value="" placeholder="Adresse e-mail">
+                <div class="wrapper">
+                    <canvas id="signature-pad" class="signature-pad" width=400 height=200></canvas>
+                </div>
+                <div>
+                    <button class="button-primary" id="clear">EFFACER</button>
+                </div>
             </div>
         </div>
 
-        <div class="droit__block">
-            <div class="droit__block--small">
-                <p>LE <strong>PHOTOGRAPHE</strong>
-                    <br>Lu et approuvé. Bon pour accord.</p>
-                <div><img class="droit--image" src="/images/droit-image/signature.png" alt=""></div>
-            </div>
-            <button id="btn" type="submit" class="button--pink">Envoyer</button>
+        <div>
+            <p>LE <strong>PHOTOGRAPHE</strong><br>
+            Lu et approuvé. Bon pour accord.</p>
+            <img class="droit--image" src="<?php echo get_template_directory_uri() . '/public/images/droit-image/signature.png' ?>" alt="">
+            <button id="btn" type="submit" class="button-primary">Envoyer</button>
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+    <script>
+        var signaturePad = new SignaturePad(document.getElementById('signature-pad'), {
+        backgroundColor: 'rgba(255, 255, 255, 0)',
+        penColor: 'rgb(0, 0, 0)'
+        });
+        var cancelButton = document.getElementById('clear');
+        cancelButton.addEventListener('click', function (event) {
+            signaturePad.clear();
+        });
+    </script>
+
+    <?php get_footer() ?>  
+    <!--menu mobile-->
+    <?php  get_template_part('template-parts/footer/footer', 'mbnav'); ?> 
+    <?php  get_template_part('template-parts/footer/footer', 'mbsocial'); ?> 
+    <!--end menu mobile-->
+
+    <!--scroll button-->
+        <?php  get_template_part('template-parts/button/button', 'scroll'); ?> 
+    <!--end scroll button-->
  </body>
  </html>

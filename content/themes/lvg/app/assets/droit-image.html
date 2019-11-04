@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Webpack</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="scss/main.scss" />
-</head>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/scss" href="scss/main.scss" />
+  </head>
  <body>
     <main class="droit"> 
         <h1>Autorisation d'utilisation d'image<br>
@@ -29,48 +29,21 @@
             </div>
             <div class="droit__block--small">
                 <p>Dénommé(e) ci-après le « <strong>MODÈLE</strong> »</p>
-                <div class="row modeles">
-                    <div>
-                        <button class="add_modeleone"> AJOUTER UN MODÈLE (majeur) </button>
-                        <button class="add_modeletwo"> AJOUTER UN MODÈLE (mineur) </button>
-                    </div>
-                </div>
-                <div class="row modele_majeur">
-                    <div>
-                        <strong>MODÈLE</strong>
-                        <input type="radio" name="gender" value="madame"><label for="genderMme">Mme</label> 
-                        <input type="radio" name="gender" value="monsieur"><label for="genderM">Mr</label>
-                        <input type="text" name="lastname" value="" placeholder="Nom" for="field-Name">
-                        <input type="text" name="firstname" value="" placeholder="Prénom" for="field-Surname">
-                        <input type="date" name="datebirth" value="">
-                        <span>
-                            <button class="add_client"> + </button>
-                            <button class="remove_client"> - </button>
-                        </span>
-                </div>
-                </div>
-                <div class="row modele_mineur">
-                    <div>
-                        <strong>MODÈLE (MINEUR)</strong>
-                        <input type="radio" name="gender" value="madame"><label for="genderMme">Mme</label> 
-                        <input type="radio" name="gender" value="monsieur"><label for="genderM">Mr</label>
-                        <input type="text" name="lastname" value="" placeholder="Nom" for="field-Name">
-                        <input type="text" name="firstname" value="" placeholder="Prénom" for="field-Surname">
-                        <input type="date" name="datebirth" value="">
-                    </div>
-                    <div>
-                        <strong>REPRÉSENTANT LÉGAL DU MODÈLE</strong>
-                        <input type="radio" name="gender" value="madame"><label for="genderMme">Mme</label> 
-                        <input type="radio" name="gender" value="monsieur"><label for="genderM">Mr</label>
-                        <input type="text" name="lastname" value="" placeholder="Nom" for="field-Name">
-                        <input type="text" name="firstname" value="" placeholder="Prénom" for="field-Surname">
-                        <input type="date" name="datebirth" value="">
-                        <span>
-                            <button class="add_client"> + </button>
-                            <button class="remove_client"> - </button>
-                        </span>
-                    </div>
-                </div>
+                <p>
+                    <input type="radio" name="gender" id="genderMme" value="madame"><label for="genderMme">Mme</label> 
+                    <input type="radio" name="gender" id="genderM" value="monsieur"><label for="genderM">M.</label>
+                    <input class="contact-form__item form-group field-input" type="text" name="lastname" value="" placeholder="Nom" for="field-Name">
+                    <input class="contact-form__item form-group field-input" type="text" name="firstname" value="" placeholder="Prénom" for="field-Surname">
+                    <input class="contact-form__item form-group field-input" type="date" name="datebirth" value="" >
+                </p>
+                <p><strong>REPRÉSENTANT LÉGAL DU MODÈLE</strong> (SI MINEUR)</p>
+                <p>
+                    <input type="radio" name="gender" id="genderMme" value="madame"><label for="genderMme">Mme</label> 
+                    <input type="radio" name="gender" id="genderM" value="monsieur"><label for="genderM">M.</label>
+                    <input class="contact-form__item form-group field-input" type="text" name="lastname" value="" placeholder="Nom" for="field-Name">
+                    <input class="contact-form__item form-group field-input " type="text" name="firstname" value="" placeholder="Prénom" for="field-Surname">
+                    <input class="contact-form__item form-group field-input" type="date" name="datebirth" value="" >
+                </p>
             </div>
             <div class="droit__block--small">
                 <p>Le <strong>MODÈLE</strong> 
@@ -118,41 +91,35 @@
                 Lu et approuvé, fait à titre gracieux. Bon pour accord.</p>
                 <p>E-mail et signature du MODÈLE</p>
                 <input type="email" name="email" value="" placeholder="Adresse e-mail">
+                <div class="wrapper">
+                    <canvas id="signature-pad" class="signature-pad" width=400 height=200></canvas>
+                </div>
+                <div>
+                    <button class="button-primary" id="clear">effacer</button>
+                </div>
             </div>
         </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <canvas class="sig-canvas" width="320" height="160">
-                        Veuillez utilisez un autre navigateur.
-                    </canvas>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md">
-                    <button class="button-primary" id="sig-submitBtn">Enregistrer</button>
-                    <button class="button-primary" id="sig-clearBtn">Annuler</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <img id="sig-image" src="" alt="Votre signature s'affichera ici !"/>
-                </div>
-            </div>
-        </div>
-            
-        
         <div>
-            <p>LE <strong>PHOTOGRAPHE</strong></br>
+            <p>LE <strong>PHOTOGRAPHE</strong><br>
             Lu et approuvé. Bon pour accord.</p>
             <img class="droit--image" src="/images/droit-image/signature.png" alt="">
             <button id="btn" type="submit" class="button-primary">Envoyer</button>
         </div>
     </div>
         <!-- </div> -->
+
     </main>
-
-
-   </body>
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+    <script>
+        var signaturePad = new SignaturePad(document.getElementById('signature-pad'), {
+        backgroundColor: 'rgba(255, 255, 255, 0)',
+        penColor: 'rgb(0, 0, 0)'
+        });
+        var cancelButton = document.getElementById('clear');
+        cancelButton.addEventListener('click', function (event) {
+            signaturePad.clear();
+        });
+    </script>
+  </body>
  </html>

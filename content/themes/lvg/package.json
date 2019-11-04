@@ -39,6 +39,7 @@
     "owl.carousel": "^2.3.4",
     "popper.js": "^1.15.0",
     "rellax": "^1.10.0",
-    "reset-css": "^4.0.1"
+    "reset-css": "^4.0.1",
+    "signature_pad": "^3.0.0-beta.3"
   }
 }

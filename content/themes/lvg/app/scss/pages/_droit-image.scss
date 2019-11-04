@@ -83,6 +83,9 @@
             height: 15px;
             padding: 5px;
         }
+        &::placeholder {
+            text-align: center;
+        }
     }
     .checkbox {
         margin: 0 45px;
@@ -90,21 +93,6 @@
         & > label {
         display: inline;
         padding: 5px;
-        }
-    }
-    .signature-component {
-        display: block;
-        margin: 10px;
-    }
-    .signature-pad {
-        display: block;
-        margin: 0 auto;
-        position: relative;
-        border: 1px solid; 
-        height: 200px;
-        width: 90%;
-        @include computers {
-            width: 50%;
         }
     }
     &--image{
@@ -115,10 +103,28 @@
 
 
 
-.sig-canvas {
-    border: 2px dotted #CCCCCC;
-    border-radius: 15px;
-    cursor: crosshair;
-    margin: 0 auto;
-    height: 160px;
+.wrapper {
+    margin: 20px auto;
+    position: relative;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 200px;
+    width: 300px;
+    @include computers {
+        width: 400px;
+    }
+}
+  
+.signature-pad {
+    border: 1px solid black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 200px;
+    width: 300px;
+    @include computers {
+        width: 400px;
+    }
 }
