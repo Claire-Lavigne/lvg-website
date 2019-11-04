@@ -1,44 +1,62 @@
 .contact {
     &-title {
-        margin: 100px auto;
+        margin: 0 auto;
+        position: relative;
+    }
+    &-picture {
+        border-radius: 50%;
+        margin: 0 auto;
+        width: 150px;
+        height: auto;
     }
     &-subtitle {
-        font-size: 1.5em;
-        margin: 30px auto;
+        position: relative;
+        font-size: 1.2em;
+        margin: 0 auto;
+        background-color: $contact-back;
+        height: 100px;
+        padding: 1em;
         i {
             padding-bottom: 10px;
         }
     }
     &__block {
         width: 100%;
-        margin: 80px auto;
+        margin: 0 auto;
+        background-color: $black;
     }
     &__rows {
         width: 100%;
+        padding-bottom: 10px;
         @include computers {
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-around;
+            padding-bottom: 0;
         }
     }
     &__row {
         p, address {
-            font-size: 1.2em;
+            font-size: 1.1em;
+            color: $white;
         }
         address {
             position: relative;
             bottom: 15px;
         }
         i {
-            color: $black;
-            padding: 20px 0;
+            color: $white;
+            padding: 15px 0;
             margin: 0 auto;
+            font-size: 1.3em;
         }
         a {
             font-weight: inherit;
+            color: $white;
         }
         i:hover, a:hover {
             color: inherit;
+            color: $pink;
         }
     }
     &-maps {
@@ -49,6 +67,24 @@
     }
 }
 
+.top-title{
+    color: $white;
+    height: 350px;
+    padding: 3.5em;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat; 
+}
+
+
+ 
+.ct-title{                     /* h2 padding */
+    padding: 50px;
+}
+
+.contact-partners{           /* form background */
+    background-color:$contact-back;
+}
 
 .partners {
     padding: 20px 0 60px;

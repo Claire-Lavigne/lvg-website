@@ -17,14 +17,40 @@
         </div>
         <nav class="header__nav">
             <ul>
-              <li><a data-hover="Home" href="index.html">Home</a></li>
-              <li><a data-hover="Portfolio" href="portfolio.html">Portfolio</a></li>
-              <li><a data-hover="Tarifs" href="prices.html">Tarifs</a></li>
-              <li><a data-hover="Contact" href="contact.html">Contact</a></li>
-              <li><a data-hover="FAQ" href="faq.html">FAQ</a></li>
+              <li><a class="nav-link nav-link-ltr" data-hover="Home" href="index.html">Home</a></li>
+              <li><a class="nav-link nav-link-ltr" data-hover="Portfolio" href="portfolio.html">Portfolio</a></li>
+              <li><a class="nav-link nav-link-ltr" data-hover="Tarifs" href="prices.html">Tarifs</a></li>
+              <li><a class="nav-link nav-link-ltr" data-hover="Contact" href="contact.html">Contact</a></li>
+              <li><a class="nav-link nav-link-ltr" data-hover="FAQ" href="faq.html">FAQ</a></li>
+              <!-- Button modal -->
+              <li><a class="nav-link nav-link-ltr" href="" data-toggle="modal" data-target="#exampleModal">Accès privé</a></li>
             </ul>
         </nav> 
     </header>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal__home">
+                <div class="modal-body">
+                    <button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close" >
+                        <!-- <span aria-hidden="true">&times;</span> -->
+                        <span aria-hidden="true">&#10008;</span>
+                    </button>
+                    <form class="modal-form"method="post" action="https://www.jingoo.com/index.php" target="_top" >
+                      <h2 class="modal-title">Accès aux albums privés</h2>
+                      <p>Saisissez ci-dessous vos identifiants pour accéder à vos albums</p>
+                      <div class="form-informations">
+                          <input   name="login" id="identifiant2" value="LL70-" placeholder="Identifiant" type="text" required><br>
+                          <input  type="password" name="password" id="pass2" value="Mot de passe" placeholder="Mot de passe" onfocus="if (this.value == 'Mot de passe') {this.value=''}" type="text" required><br>
+                      </div>             
+                    <input name="action" value="login" type="hidden"><input name="idPhotographeAccesModule" value="/infos/acces.php/1029873" type="hidden">
+                    <button name="Submit3" value="OK" class="button-primary" type="submit">Se connecter</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
 </div>
     <main>
         <!-- <h1>Forfaits</h1> -->
@@ -218,14 +244,46 @@
 
         <div class="packages__information">
             <h2>Informations mariage</h2>
-              <p class="packages__informations--text">* Période : Janvier à Mai + Octobre à Décembre inclus</p>
-                <ul>
-                    <li><i class="fa fa-camera fa-3x"></i><p>Photos numériques en HD</p></li>
-                    <li><i class="fa fa-picture-o fa-3x"></i><p>Photo en couleur et N&B</p></li>
-                    <li><i class="fa fa-car fa-3x"></i><p>Déplacement inclus (Tarn)</p></li>
-                    <li><i class="fa fa-download fa-3x"></i><p>Téléchargement gratuit</p></li>
-                    <li><i class="fa fa-hdd-o fa-3x"></i><p>Sauvegarde sur Drive à vie</p></li>
-             </ul>
+            <p class="packages__informations--text">* Période : Janvier à Mai + Octobre à Décembre inclus</p>
+            
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="card-infos col-md">
+                        <div class="card-infos-block">
+                            <div class="card-infos-icon">
+                                <img src="https://img.icons8.com/ios/50/960D69/picture.png">
+                            </div>
+                            <div class="card-infos-text">
+                                <p>Photos numériques en HD (couleur et N&B)</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="card-infos col-md">
+                        <div class="card-infos-block">
+                            <div class="card-infos-icon">
+                                <img src="https://img.icons8.com/ios/50/960D69/car.png">
+                            </div>
+                            <div class="card-infos-text">
+                                <p>Déplacement inclus (Tarn)</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="card-infos col-md">
+                        <div class="card-infos-block">
+                            <div class="card-infos-icon">
+                                <img src="https://img.icons8.com/ios/50/960D69/download-2.png">
+                            </div>
+                            <div class="card-infos-text">
+                                <p>Téléchargements gratuit &<br>
+                                Sauvegarde sur Drive à vie</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
        </div>
 
 
@@ -276,8 +334,13 @@
             </div>
         </div>
  -->
-
 </main>
+
+
+
+
+
+
 <footer>
             <a href="https://www.facebook.com/lvgstudio/" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
             <a href="https://www.instagram.com/lavignephotographe/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
@@ -295,6 +358,8 @@
               <li><a href="prices.html">Tarifs</a></li>
               <li><a href="contact.html">Contact</a></li>
               <li><a href="faq.html">FAQ</a></li>
+              <!-- Button modal -->
+              <li><a href="" data-toggle="modal" data-target="#exampleModal">Accès privé</a></li>
             </ul>
         </nav>
         <div class="social-nav">

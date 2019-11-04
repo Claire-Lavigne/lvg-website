@@ -40,6 +40,10 @@ msg.innerHTML = '<strong> &copy; ' + year + ' </strong>';
         }
       }
   });
+
+
+
+
     
 // ===== Scroll to Top ==== 
 $(window).scroll(function() {
@@ -55,13 +59,15 @@ $('#button-scroll').click(function() {
   }, 500);
 });
 
+
+
 //===========menu-mobile===========
 
   app.$body = $('body');
   //menu-mobile
   $('.ui-button').on('click', app.handleToggleMenu);
 
-  },
+ },
   handleToggleMenu: function(event) {
 
     console.log('app.handleToggleMenu');
@@ -76,3 +82,8 @@ $('#button-scroll').click(function() {
 $(app.init);
 
  AOS.init();
+ 
+ 
+ 
+
+  

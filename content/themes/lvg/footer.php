@@ -1,3 +1,4 @@
+
 <footer>
     <a href="https://www.facebook.com/lvgstudio/" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
     <a href="https://www.instagram.com/lavignephotographe/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>  
@@ -34,5 +35,9 @@
         <ul>
             <li class="mentions-link--bottom"><p>SIRET 788 675 858 00013 - R.M. : 81 - R.C.S. : G8101 GREFFE D'ALBI - APE/NAFA : 7420ZR</p></li>
         </ul> 
+         
 </footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <?php wp_footer(); ?>
+</body>
+</html>

@@ -38,42 +38,104 @@ Template Name: Portfolio
   <!-- grid -->
    <div class="portfolio-images">
     <div class="row">
-      <div class="photo" style="background-image: url(<?php echo get_template_directory_uri() . '/public/images/services-couple.jpg) ' ?> " alt="..." > 
-        <h2>Fiançailles</h2>
+    
+      <div class="blockphoto">  
+        <div class="photo" style="background-image: url(<?php echo get_template_directory_uri() . '/public/images/services-couple.jpg) ' ?> " alt="..." > 
+          <div class="block">
+            <h2 class="text">Fiançailles</h2>
+          </div>
+        </div>
       </div>
-      <div class="photo" style="background-image: url(<?php echo get_template_directory_uri() . '/public/images/services-wedding.jpg) ' ?>"> 
-        <h2>Mariage</h2>
+      
+      <div class="blockphoto">
+        <div class="photo" style="background-image: url(<?php echo get_template_directory_uri() . '/public/images/services-wedding.jpg) ' ?>"> 
+          <div class="block">
+            <h2 class="text">Mariage</h2>
+          </div>
+        </div>
       </div>
-      <div class="photo" style="background-image: url(<?php echo get_template_directory_uri() . '/public/images/services-pregnant.jpg) ' ?>"> 
-        <h2>Grossesse</h2>
+      
+      <div class="blockphoto">
+        <div class="photo" style="background-image: url(<?php echo get_template_directory_uri() . '/public/images/services-pregnant.jpg) ' ?>"> 
+          <div class="block">
+            <h2 class="text">Grossesse</h2>
+          </div>
+        </div>
       </div>
-      <div class="photo" style="background-image: url(<?php echo get_template_directory_uri() . '/public/images/services-birth.jpg) ' ?>"> 
-        <h2>Naissance</h2>
+      
+      <div class="blockphoto">
+        <div class="photo" style="background-image: url(<?php echo get_template_directory_uri() . '/public/images/services-birth.jpg) ' ?>"> 
+          <div class="block">
+            <h2 class="text">Naissance</h2>
+          </div>
+        </div>
       </div>
-      <div class="photo" style="background-image: url(<?php echo get_template_directory_uri() . '/public/images/kids.jpg) ' ?>"> 
-        <h2>Enfant</h2>
+      
+      <div class="blockphoto">
+        <div class="photo" style="background-image: url(<?php echo get_template_directory_uri() . '/public/images/kids.jpg) ' ?>"> 
+          <div class="block">
+            <h2 class="text">Enfant</h2>
+          </div>
+        </div>
       </div>
-      <div class="photo" style="background-image: url(<?php echo get_template_directory_uri() . '/public/images/individual.jpg) ' ?>"> 
-        <h2>Individuel</h2>
+      
+      <div class="blockphoto">
+        <div class="photo" style="background-image: url(<?php echo get_template_directory_uri() . '/public/images/individual.jpg) ' ?>"> 
+          <div class="block">
+            <h2 class="text">Individuel</h2>
+          </div>
+        </div>
       </div>
-      <div class="photo" style="background-image: url(<?php echo get_template_directory_uri() . '/public/images/famille.jpg) ' ?>"> 
-        <h2>Famille</h2>
+      
+      <div class="blockphoto">
+        <div class="photo" style="background-image: url(<?php echo get_template_directory_uri() . '/public/images/famille.jpg) ' ?>"> 
+          <div class="block">
+            <h2 class="text">Famille</h2>
+          </div>
+        </div>
       </div>
-      <div class="photo" style="background-image: url(<?php echo get_template_directory_uri() . '/public/images/services-engagement.jpg) ' ?>"> 
-        <h2>Couple</h2>
+      
+      <div class="blockphoto">
+        <div class="photo" style="background-image: url(<?php echo get_template_directory_uri() . '/public/images/services-engagement.jpg) ' ?>"> 
+          <div class="block">
+            <h2 class="text">Couple</h2>
+          </div>
+        </div>
       </div>
-      <div class="photo" style="background-image: url(<?php echo get_template_directory_uri() . '/public/images/services-group.jpg) ' ?>"> 
-        <h2>Groupe</h2>
+      
+      <div class="blockphoto">
+        <div class="photo" style="background-image: url(<?php echo get_template_directory_uri() . '/public/images/services-group.jpg) ' ?>"> 
+          <div class="block">
+            <h2 class="text">Groupe</h2>
+          </div>
+        </div>
       </div>
-      <div class="photo" style="background-image: url(<?php echo get_template_directory_uri() . '/public/images/friends.jpg) ' ?>"> 
-        <h2>Amis</h2>
+      
+      <div class="blockphoto">
+        <div class="photo" style="background-image: url(<?php echo get_template_directory_uri() . '/public/images/friends.jpg) ' ?>"> 
+          <div class="block">
+            <h2 class="text">Amis</h2>
+          </div>
+        </div>
       </div> 
-      <div class="photo" style="background-image: url(<?php echo get_template_directory_uri() . '/public/images/studio3.jpg) ' ?>"> 
-        <h2>Homme</h2>
+      
+      <div class="blockphoto">
+        <div class="photo" style="background-image: url(<?php echo get_template_directory_uri() . '/public/images/studio3.jpg) ' ?>"> 
+          <div class="block">
+            <h2 class="text">Homme</h2>
+          </div>
+        </div>
       </div>
-      <div class="photo" style="background-image: url(<?php echo get_template_directory_uri() . '/public/images/studio1.jpg) ' ?>"> 
-        <h2>Femme</h2>
+      
+      <div class="blockphoto">
+        <div class="photo" style="background-image: url(<?php echo get_template_directory_uri() . '/public/images/studio1.jpg) ' ?>"> 
+          <div class="block">
+            <h2 class="text">Femme</h2>
+          </div>
+        </div>
       </div>
+      
+    </div>
   </div> 
 </main>
 

@@ -16,21 +16,48 @@
         </div>
         <nav class="header__nav">
             <ul>
-              <li><a data-hover="Home" href="index.html">Home</a></li>
-              <li><a data-hover="Portfolio" href="portfolio.html">Portfolio</a></li>
-              <li><a data-hover="Tarifs" href="prices.html">Tarifs</a></li>
-              <li><a data-hover="Contact" href="contact.html">Contact</a></li>
-              <li><a data-hover="FAQ" href="faq.html">FAQ</a></li>
+              <li><a class="nav-link nav-link-ltr" data-hover="Home" href="index.html">Home</a></li>
+              <li><a class="nav-link nav-link-ltr" data-hover="Portfolio" href="portfolio.html">Portfolio</a></li>
+              <li><a class="nav-link nav-link-ltr" data-hover="Tarifs" href="prices.html">Tarifs</a></li>
+              <li><a class="nav-link nav-link-ltr" data-hover="Contact" href="contact.html">Contact</a></li>
+              <li><a class="nav-link nav-link-ltr" data-hover="FAQ" href="faq.html">FAQ</a></li>
+              <!-- Button modal -->
+              <li><a class="nav-link nav-link-ltr" href="" data-toggle="modal" data-target="#exampleModal">Accès privé</a></li>
             </ul>
         </nav> 
     </header>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal__home">
+                <div class="modal-body">
+                    <button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close" >
+                        <!-- <span aria-hidden="true">&times;</span> -->
+                        <span aria-hidden="true">&#10008;</span>
+                    </button>
+                    <form class="modal-form" method="post" action="https://www.jingoo.com/index.php" target="_top" >
+                      <h2 class="modal-title">Accès aux albums privés</h2>
+                      <p>Saisissez ci-dessous vos identifiants pour accéder à vos albums</p>
+                      <div class="modal-form-informations">
+                          <input name="login" id="identifiant2" value="LL70-" placeholder="Identifiant" type="text" required><br>
+                          <input type="password" name="password" id="pass2" value="Mot de passe" placeholder="Mot de passe" onfocus="if (this.value == 'Mot de passe') {this.value=''}" type="text" required><br>
+                      </div>             
+                    <input name="action" value="login" type="hidden"><input name="idPhotographeAccesModule" value="/infos/acces.php/1029873" type="hidden">
+                    <button name="Submit3" value="OK" class="button-primary" type="submit">Se connecter</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
 
-    <main>
-        <h2 class="contact-title">Laurent Lavigne<br>Photographe Professionnel à Albi
-        </h2>
-
+ <main>
+        <div class="contact-title top-title" style="background-image: url(images/contact-image.jpg)">
+            <h2>Laurent Lavigne<br>Photographe Professionnel à Albi</h2>
+            <img class="contact-picture" src="/images/laurent.jpg" alt="photograph picture"></div> 
+        </div>
         <div class="contact-subtitle">
-            <i class="fa fa-calendar-check-o fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-calendar-check-o fa-2x" aria-hidden="true"></i>    
             <h3>Accueil sur RDV uniquement</h3>
         </div>
         
@@ -38,20 +65,20 @@
             <div class="contact__block">
                 <div class="contact__rows">
                     <div class="contact__row">
-                        <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-phone fa-1x" aria-hidden="true"></i>
                         <p><a href="tel:+33681021789">06.81.02.17.89</a></p>
                     </div>
                     <div class="contact__row">
-                        <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
                         <p><address><a href="http://maps.google.com/?q=LVG+Studio,432+route+de+Castres,81990+PUYGOUZON" target="_blank">
-                        LVG Studio<br>432 route de Castres<br>81990 PUYGOUZON</a></address></p>
+                        432 route de Castres 81990 PUYGOUZON</a></address></p>
                     </div>
                     <div class="contact__row">
-                        <i class="fa fa-car fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-car fa-1x" aria-hidden="true"></i>
                         <p>Parking gratuit</p>
                     </div>
                     <div class="contact__row">
-                        <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
                         <p><a href="mailto:lavignephotographe@gmail.com">lavignephotographe@gmail.com</a></p>
                     </div>
                 </div>
@@ -62,10 +89,10 @@
             </div>
         </section>
 
-        <section class="contact">
-            <h2 class="contact-title">Nous contacter</h2>
-            <form  class="form-contact" action="">
-                 <div class="form-informations">
+        <section class="contact form-bg">
+            <h2 class="contact-title ct-title">Nous contacter</h2>
+            <form  class="contact-form" action="">
+                 <div class="contact-form-informations">
                     <input type="text" name="lastname" placeholder="Nom" autocomplete="family-name" required><br>
                     <input type="text" name="firstname" placeholder="Prénom" autocomplete="given-name" required><br>
                     <input type="email" name="email" placeholder="Email" autocomplete="email" required><br>
@@ -73,11 +100,11 @@
                     <textarea name="message" placeholder="Message" required></textarea>
                 </div>
             </form>
-            <button class="button--pink" type="submit">Envoyer</button>             
+            <button class="button-primary" type="submit">Envoyer</button>             
         </section>
 
-        <section class="contact">
-            <h2 class="contact-title">Nos partenaires</h2>
+        <section class="contact contact-partners">
+            <h2 class="contact-title ct-title">Nos partenaires</h2>
             <div class="partners">
                 <img class="partners-logo" src="images/contact/partenaire-geantcasino.png" alt="Logo partenaire Géant Casino Albi">
                 <img class="partners-logo" src="images/contact/partenaire-traiteur.png" alt="Logo partenaire Alban Traiteur Albi">
@@ -105,6 +132,8 @@
             <li><a href="prices.html">Tarifs</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="faq.html">FAQ</a></li>
+            <!-- Button modal -->
+            <li><a href="" data-toggle="modal" data-target="#exampleModal">Accès privé</a></li>
           </ul>
     </nav>
     <div class="social-nav">

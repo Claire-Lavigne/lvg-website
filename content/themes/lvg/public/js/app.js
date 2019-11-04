@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "0c10bab7e2438025f643";
+/******/ 	var hotCurrentHash = "be49044964879c9e9c90";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -851,6 +851,10 @@ msg.innerHTML = '<strong> &copy; ' + year + ' </strong>';
         }
       }
   });
+
+
+
+
     
 // ===== Scroll to Top ==== 
 $(window).scroll(function() {
@@ -866,13 +870,15 @@ $('#button-scroll').click(function() {
   }, 500);
 });
 
+
+
 //===========menu-mobile===========
 
   app.$body = $('body');
   //menu-mobile
   $('.ui-button').on('click', app.handleToggleMenu);
 
-  },
+ },
   handleToggleMenu: function(event) {
 
     console.log('app.handleToggleMenu');
@@ -887,6 +893,11 @@ $('#button-scroll').click(function() {
 $(app.init);
 
  AOS.init();
+ 
+ 
+ 
+
+  
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),

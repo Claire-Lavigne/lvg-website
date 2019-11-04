@@ -4,18 +4,22 @@
     </a>
     <nav class="mobile-nav">
       <ul>
-        <li><a data-hover="Home" href="index.html">Home</a></li>
-        <li><a data-hover="Portfolio" href="portfolio.html">Portfolio</a></li>
-        <li><a data-hover="Tarifs" href="prices.html">Tarifs</a></li>
-        <li><a data-hover="Contact" href="contact.html">Contact</a></li>
-        <li><a data-hover="FAQ" href="faq.html">FAQ</a></li>
+        <?php
+            $menu = wp_nav_menu([
+              'menu' => 'menu-header',
+              'theme_location' => 'menu-top',
+              'container_class' => '',
+              'container' => '',
+              'items_wrap'  => '<li><a href="%2$s">%3$s</a></li>',
+              'echo' => true
+            ]);
+            $menu = strip_tags($menu, '<nav></nav>');
+
+            echo $menu;
+        ?>
+        <!-- Button modal -->
+        <li><a href="" data-toggle="modal" data-target="#exampleModal">Accès privé</a></li>
+        <!-- Fin button modal -->
       </ul>
-      <!-- <ul>
-          <li><a class="underline" href="index.html">Home</a></li>
-          <li><a class="underline" href="portfolio.html">Portfolio</a></li>
-          <li><a class="underline" href="prices.html">Tarifs</a></li>
-          <li><a class="underline" href="contact.html">Contact</a></li>
-          <li><a class="underline" href="faq.html">faq</a></li>
-      </ul> -->
     </nav>
     
