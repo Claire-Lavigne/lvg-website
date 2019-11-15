@@ -9659,22 +9659,21 @@ h3 {
 
 .accordion-faq {
   position: relative;
-  top: 25px; }
-  .accordion-faq .card:first-child {
-    border-top: none; }
-  .accordion-faq .card:hover {
-    background: #eee; }
+  top: 25px;
+  margin: 20px 5% 80px; }
+  @media (min-width: 768px) {
+    .accordion-faq {
+      margin: 20px 10% 80px; } }
   .accordion-faq .card .card-header {
     font-size: 1.2em;
-    padding: 20px; }
+    padding: 20px;
+    background: #fff; }
   .accordion-faq .card .card-body {
     text-align: center;
     font-size: 0.9em;
     padding: 20px; }
     .accordion-faq .card .card-body a:hover {
       color: inherit; }
-  .accordion-faq .card [aria-expanded="true"] {
-    background: #eee; }
 
 #button-scroll {
   position: fixed;
@@ -10099,7 +10098,7 @@ footer {
   position: relative;
   font-size: 1.2em;
   margin: 0 auto;
-  background-color: #d6d4bc;
+  background-color: #44A36F;
   height: 100px;
   padding: 1em; }
   .contact-subtitle i {
@@ -10109,6 +10108,8 @@ footer {
   width: 100%;
   margin: 0 auto;
   background-color: black; }
+  .contact__block:last-child {
+    background-color: white; }
 
 .contact__rows {
   width: 100%;
@@ -10162,7 +10163,7 @@ footer {
 
 .contact-partners {
   /* form background */
-  background-color: #d6d4bc; }
+  background-color: #44A36F; }
 
 .partners {
   padding: 20px 0 60px;

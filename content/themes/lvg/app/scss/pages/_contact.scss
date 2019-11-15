@@ -24,6 +24,9 @@
         width: 100%;
         margin: 0 auto;
         background-color: $black;
+        &:last-child {
+            background-color: $white;
+        }
     }
     &__rows {
         width: 100%;

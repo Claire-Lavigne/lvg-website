@@ -21,19 +21,24 @@
 .accordion-faq {
     position: relative;
     top: 25px;
+    margin: 20px 5% 80px;
+    @include tablets {
+        margin: 20px 10% 80px;
+    }
     .card {
-        &:first-child {
-            border-top: none;
-        }
+        // &:first-child {
+        //     border-top: none;
+        // }
         // &:last-child {
             //     border-bottom: 2px solid $pink;
         // }
-        &:hover {
-            background: #eee;
-        }
+        // &:hover {
+        //     background: #eee;
+        // }
         .card-header {
             font-size: 1.2em;
             padding: 20px;
+            background: #fff;
         }
         .card-body {
             text-align: center;
@@ -43,8 +48,8 @@
                 color: inherit;
             }
         }
-        [aria-expanded="true"] {
-            background: #eee;
-        }
+        // [aria-expanded="true"] {
+        //     background: #eee;
+        // }
     }
 }
