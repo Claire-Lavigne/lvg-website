@@ -7,6 +7,7 @@ Template Name: Portfolio
 <header class="header header-slides header-zindex">
 <?php  get_template_part('template-parts/header/header', 'nav'); ?> 
 </header>
+
 <main> 
   <!-- carousel -->
    <div id="carouselExampleFade" class="carousel slide carousel-fade carousel-header" data-ride="carousel">

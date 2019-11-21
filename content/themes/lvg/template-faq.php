@@ -7,6 +7,7 @@ Template Name: FAQ
 <header class="header">
 <?php  get_template_part('template-parts/header/header', 'nav'); ?> 
 </header>
+
 <main class="accordion-faq">
     <div class="accordion" id="accordionExample">
         <div class="card">

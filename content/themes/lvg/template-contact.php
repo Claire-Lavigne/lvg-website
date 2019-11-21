@@ -7,6 +7,7 @@ Template Name: Contact
 <header class="header">
     <?php  get_template_part('template-parts/header/header', 'nav'); ?> 
 </header>
+
 <main>
         <div class="contact-title top-title" style="background-image: url(<?php echo get_template_directory_uri() . '/public/images/contact-image.jpg ' ?> )" >
             <h2>Laurent Lavigne<br>Photographe Professionnel à Albi</h2>
@@ -53,12 +54,12 @@ Template Name: Contact
             </div>
         </section>
         <!-- FORMULAIRE DE CONTACT -->
-        <section>
+        <section class="contact form-bg">
             <h2 class="contact-title ct-title">Nous contacter</h2>
                 <?php echo do_shortcode('[contact-form-7 id="36" title="Formulaire de contact"]'); ?>
         </section>
          <!-- FIN FORMULAIRE DE CONTACT -->
-        <section  class="contact-partners">
+         <section class="contact contact-partners">
             <h2 class="contact-title ct-title">Nos partenaires</h2>
                 <div class="partners">
                     <img class="partners-logo" src=" <?php echo get_template_directory_uri() . '/public/images/contact/partenaire-geantcasino.png' ?>" alt="Logo partenaire Géant Casino Albi">
