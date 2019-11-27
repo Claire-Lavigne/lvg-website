@@ -15,32 +15,32 @@ Il souhaite moderniser son site, dans le but d'attirer davantage de clients et d
 - Réalisé par le photographe sur Wix
 
 ### V1 (ensemble des pages)
-- Home :
-    - Accès Espace client : Accès aux books [Jingoo](https://www.jingoo.com/) en ligne par authentification (intégration sur LVG Studio)
-    - Liste des services proposés par le photographe
-    - Newsletter
-    - Feedbacks des clients
-- Portfolio :
-    - Sélection thématique des meilleures réalisations photos, réalisées par le photographe et libres de droits
-- Tarifs :
-    - Tarifs + Descriptions des prestations
-- Contact :
-    - Informations de contact
-    - Google Maps
-    - Formulaire de contact
-    - Partenaires
-- FAQ :
-    - Questions/Réponses les plus rencontrées
-    (avec vidéo de présentation des forfaits, réalisée par le photographe)
+- Header :
+    - Home :
+        - Présentation du photographe
+        - Feedbacks des clients
+    - Portfolio :
+        - Sélection thématique des meilleures réalisations photos, réalisées par le photographe et libres de droits
+    - Tarifs :
+        - Tarifs + Descriptions des prestations
+    - Contact :
+        - Informations de contact
+        - Google Maps
+        - Formulaire de contact
+        - Partenaires
+    - FAQ :
+        - Questions/Réponses les plus rencontrées
+        (avec vidéo de présentation des forfaits, réalisée par le photographe)
+    - Accès Espace client : 
+        - Accès aux books [Jingoo](https://www.jingoo.com/) en ligne par authentification (intégration sur LVG Studio)
 - Footer :
-    - Réseaux sociaux
     - Droits d'image
-    - Mentions légales
-    - Informations entreprise
+    - Mentions légales avec Informations entreprise
     - Copyright
 
 ### V2
-- Newsletter fonctionnelle avec envoi automatique d'emails (forfaits détaillés + cadeau)
+- Ajouter Réseaux sociaux
+- Ajouter Newsletter fonctionnelle avec envoi automatique d'emails (forfaits détaillés + cadeau)
 - Intégrer les véritables photos du photographe au portfolio
 - Empêcher la lecture de la vidéo réalisée par le photographe à partir de x minutes pour intégrer un formulaire de contact (type newsletter) et permettre la suite de la lecture uniquement aux clients qui l'auront complété.
 - Permettre au client de compléter la page "droit d'image" en ligne, avec transformation en pdf et envois par mail automatisés
@@ -62,3 +62,8 @@ Il souhaite moderniser son site, dans le but d'attirer davantage de clients et d
 - AOS
 - Wordpress
     - Plugins : Contact form 7
+
+## Utiliser Répertoire
+- `npm install`
+- `npm run build:dev`
+- `npm start`
